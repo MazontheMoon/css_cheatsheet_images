@@ -1,0 +1,24 @@
+https://mazcodesonthemoon.wordpress.com/2020/10/12/teaching-myself-to-code-css/
+https://dev.w3.org/html5/html-author/charref
+https://google.github.io/styleguide/htmlcssguide.html
+https://www.w3.org/2009/cheatsheet/
+https://caniuse.com/
+https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes
+https://html.spec.whatwg.org/
+https://www.w3.org/WAI/test-evaluate/preliminary/
+https://validator.w3.org/
+https://jigsaw.w3.org/css-validator/
+
+<span class="really-look-at-me-text"></span> - Bold & Italic
+
+<span class="look-at-me-text"></span> - Italic
+
+<span class="code-word"></span> - Highlight with background colour/font and size
+
+
+var(--font)
+var(--header-font)
+
+var(--primary-col)
+
+
