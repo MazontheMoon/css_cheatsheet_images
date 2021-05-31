@@ -12,6 +12,7 @@ https://jigsaw.w3.org/css-validator/
 favicon:
 https://favicon.io/emoji-favicons/
 
+
 <span class="really-look-at-me-text"></span> - Bold & Italic
 
 <span class="look-at-me-text"></span> - Italic
@@ -19,10 +20,41 @@ https://favicon.io/emoji-favicons/
 <span class="code-word"></span> - Highlight with background colour/font and size
 
 
+FONT:
+
+header-font...
+font-family: 'Limelight', cursive;
+
+font...
+font-family: 'Roboto', sans-serif;
+
 var(--font)
 var(--header-font)
 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Limelight&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+
+3 colours: 
+Dark Grey
+#212529
+hsl(210, 11%, 15%)
+rgb(33, 37, 41)
+
+White
+#f8f9fa
+hsl(210, 17%, 98%)
+rgb(248, 249, 250)
+
+Purple
+#3D157A
+hsl(264, 71%, 28%)
+rgb(61, 21, 122)
+
+
 var(--primary-col)
+var(--highlight-col)
+var(--text-col)
+
 
  foo {
  display
