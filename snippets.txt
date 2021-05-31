@@ -24,4 +24,12 @@ var(--header-font)
 
 var(--primary-col)
 
-
+ foo {
+ display
+ position
+ background
+ width
+ height
+ color
+ text
+ }
