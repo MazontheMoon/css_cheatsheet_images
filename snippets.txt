@@ -9,6 +9,9 @@ https://www.w3.org/WAI/test-evaluate/preliminary/
 https://validator.w3.org/
 https://jigsaw.w3.org/css-validator/
 
+favicon:
+https://favicon.io/emoji-favicons/
+
 <span class="really-look-at-me-text"></span> - Bold & Italic
 
 <span class="look-at-me-text"></span> - Italic
