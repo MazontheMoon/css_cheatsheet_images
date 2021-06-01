@@ -1,24 +1,6 @@
 # CSS Cheatsheet - Text
- My cheatsheets to teach myself coding and frontend development - this lesson is for styling images
+ One in a series of cheat sheets I have created to teach myself coding and frontend development - this lesson is for styling images. The notes I have created are based on the teachings of [FreeCodeCamp](https://www.freecodecamp.org/), [MDN Web Docs](https://developer.mozilla.org) and [W3Schools](https://www.w3schools.com/)
 
- ## Prerequisites
-
- Web Browser (tested on Chrome, Firefox and Edge)
-
- ## Built With
-
- * HTML
- * CSS
- * Sweat, some tears and a bit of laughter too
-
- ## Software
-
- * VS Code
- * CodePen
-
-## Versioning
-
-Version 1.1 - Initial content
 
 ## Authors
 * **Mary Ronan** - [MazOnTheMoon](https://github.com/MazontheMoon)
@@ -42,13 +24,30 @@ Examples:
 * docs: Add naming convention rules to README
 * test: Test accessibility for styles in STYLESHEET
 
-## Resources
+ ## Prerequisites
 
-* MDN
-* W3Schools
+ Web Browser (tested on Chrome, Firefox and Edge)
+
+ ## Built With
+
+ * HTML
+ * CSS
+ * Sweat, some tears and a bit of laughter too
+
+ ## Software
+
+ * VS Code
+ * CodePen
+
+ ## Resources
+
 * Font Awesome
 * Google fonts
 * Coolors.co
+
+## Versioning
+
+Version 1.1 - Initial content
 
 ## Acknowledgments
 We would like to offer our appreciation to Spotify and the *This is Celestial Aeon Project* playlist for providing the suitable accompaniment for this project
