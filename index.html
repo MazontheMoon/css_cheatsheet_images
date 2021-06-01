@@ -1,45 +1,90 @@
 <!--=======================================
-My CSS Cheat Sheet for learning CSS - Text
+My CSS Cheat Sheet for learning CSS - Images
 ==========================================-->
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <!--General Page Info-->
+    <!--general info-->
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Teach Myself CSS - Images">
     <title>CSS - Images</title>
-    <!--Stylesheets and favicon-->
+    <!--stylesheets, fonts and favicon-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link href="style.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
     <link href="favicon.ico" type="image/x-icon" rel="shortcut icon" >
-    </head>
+  </head>
     
 <!--=====================
 Finding your way around 
 =========================
-1. 
+1. Title
+2. Nav
+3. Section 1 - Intro
+4. Section 2 - Filters
+  4.a subsection 1 - intro
+  4.b subsection 2 - url
+  4.c subsection 3 - blur
+  4.d subsection 4 - brightness
+  4.e subsection 5 - contrast
+  4.f subsection 6 - drop-shadow
+  4.g subsection 7 - grayscale
+  4.h subsection 8 - hue-rotate
+  4.i subsection 9 - invert
+  4.j subsection 10 - saturate
+  4.k subsection 11- opacity
+  4.l subsection 12 - sepia
+5. Section 3 - Clipping  
+  5.a subsection 1 - intro
+  5.b subsection 2 - box
+  5.c subsection 3 - inset
+  5.d subsection 4 - circle
+  5.e subsection 5 - ellipse
+  5.f subsection 6 - polygon
+  5.g subsection 7 - path
+6. Footer
+  6.a About
+  6.b Author
+  6.c Social media
 ------------------------->
-<body>
-  <!--Header-->
-  <header id="top">
-    <h1></h1>
-  </header>
-  <!--nav menu-->
-  <nav></nav>
-  <!--main content for page-->
-  <main></main>
-  <!--footer-->
-  <footer>
-    <!--Made by Me  - Github, Codepen, LinkedIn and Wordpress blog-->
-    <div id="made_by_me">
-      <p>Designed by <abbr title="Mary Ronan">MazOnTheMoon</abbr> 2021</p>
-      <p><a href="https://www.linkedin.com/in/mary-ronan/" target="_blank"> <span class="fab fa-linkedin"> </span></a>
-        <a href="https://github.com/MazontheMoon" target="_blank"> <span class="fab fa-github-square"> </span></a>
-        <a href="https://codepen.io/mazonthemoon/#" target="_blank"> <span class="fab fa-codepen"> </span></a>
-        <a href="https://mazcodesonthemoon.wordpress.com/2020/10/12/teaching-myself-to-code-css/" target="_blank"> <span class="fab fa-wordpress"> </span></a>
-      </p>
+  <body>
+    <!--Container box-->
+    <div id="container">
+      <!--Header-->
+      <header id="top">
+        <h1>CSS of Images</h1>
+      </header>
+      <!--nav menu-->
+      <nav>
+        <ul>
+          <li><a href="#sec_filters">Filters</a></li>
+          <li><a href="#sec_clipping">Clipping</a></li>
+        </ul>
+      </nav>
+      <!--main content for page-->
+      <main>
+        <!--Section 1 - Intro-->
+        <section id="sec_intro"></section>
+        <!--Section 2 - Filters-->
+        <section id="sec_filters"></section>
+        <!--Section 3 - Clipping-->
+        <section id="sec_clipping"></section>      
+      </main>
+      <!--footer-->
+      <footer>
+        <!--Made by Me  - Github, Codepen, LinkedIn and Wordpress blog-->
+        <div id="made_by_me">
+          <p>Designed by <abbr title="Mary Ronan">MazOnTheMoon</abbr> 2021</p>
+          <p><a href="https://www.linkedin.com/in/mary-ronan/" target="_blank"> <span class="fab fa-linkedin"> </span></a>
+            <a href="https://github.com/MazontheMoon" target="_blank"> <span class="fab fa-github-square"> </span></a>
+            <a href="https://codepen.io/mazonthemoon/#" target="_blank"> <span class="fab fa-codepen"> </span></a>
+            <a href="https://mazcodesonthemoon.wordpress.com/2020/10/12/teaching-myself-to-code-css/" target="_blank"> <span class="fab fa-wordpress"> </span></a>
+          </p>
+        </div>
+        <!--Back to top shortcut-->
+      </footer>
     </div>
-    <!--Back to top shortcut-->
-  </footer>
-</body>
+  </body>
 </html>
