@@ -55,7 +55,6 @@ var(--primary-col)
 var(--highlight-col)
 var(--text-col)
 
-
  foo {
  display
  position
