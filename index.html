@@ -38,12 +38,12 @@ Finding your way around
   4.l subsection 12 - sepia
 5. Section 3 - Clipping  
   5.a subsection 1 - intro
-  5.b subsection 2 - box
-  5.c subsection 3 - inset
-  5.d subsection 4 - circle
-  5.e subsection 5 - ellipse
-  5.f subsection 6 - polygon
-  5.g subsection 7 - path
+  5.b subsection 2 - inset
+  5.c subsection 3 - circle
+  5.d subsection 4 - ellipse
+  5.e subsection 5 - polygon
+  5.f subsection 6 - path
+  5.g subsection 7 - box
 6. Section 4 - Best Practices
 7. Footer
   7.a About
@@ -72,7 +72,9 @@ Finding your way around
           <header class="sect_header">
             <h2>The road so far...</h2>
           </header>
-          <div class="text_box"></div>
+          <div class="text_box">
+            <p>...</p>
+          </div>
         </section>
         <!--Section 2 - Filters-->
         <section id="sect_filters">
@@ -81,25 +83,29 @@ Finding your way around
           </header>
           <!--Section 2 - Filters - Subsection 1 - intro-->
           <div id="sect_filters_intro" class="subsection_box">
-            <div class="code_box"></div>
-            <ul class="sub_nav">
-              <li><a href="#sect_filters_url">url</a></li>
-              <li><a href="#">blur</a></li>
-              <li><a href="#">brightness</a></li>
-              <li><a href="#">contrast</a></li>
-              <li><a href="#">drop-shadow</a></li>
-              <li><a href="#">grayscale</a></li>
-              <li><a href="#">hue-rotate</a></li>
-              <li><a href="#">invert</a></li>
-              <li><a href="#">saturate</a></li>
-              <li><a href="#">opacity</a></li>
-              <li><a href="#">sepia</a></li>
-            </ul>
+            <div class="text_box">
+              <div class="code_box">
+                <code></code>
+              </div>
+              <ul class="sub_nav">
+                <li><a href="#sect_filters_url">url</a></li>
+                <li><a href="#sect_filters_blur">blur</a></li>
+                <li><a href="#sect_filters_brightness">brightness</a></li>
+                <li><a href="#sect_filters_contrast">contrast</a></li>
+                <li><a href="#sect_filters_shadow">drop-shadow</a></li>
+                <li><a href="#sect_filters_grayscale">grayscale</a></li>
+                <li><a href="#sect_filters_hue">hue-rotate</a></li>
+                <li><a href="#sect_filters_invert">invert</a></li>
+                <li><a href="#sect_filters_saturate">saturate</a></li>
+                <li><a href="#sect_filters_opacity">opacity</a></li>
+                <li><a href="#sect_filters_sepia">sepia</a></li>
+              </ul>
+            </div>
           </div>
           <!--Section 2 - Filters - Subsection 2 - url-->
           <div id="sect_filters_url" class="subsection_box">
             <div class="text_box">
-              <h3>url</h3>
+              <h3>url()</h3>
               <p>...</p>
             </div>
             <div class="code_box">
@@ -109,13 +115,186 @@ Finding your way around
             </div>
             <figure id="control_img"></figure>
           </div>
+          <!--Section 2 - Filters - Subsection 3 - blur-->
+          <div id="sect_filters_blur" class="subsection_box">
+            <div class="text_box">
+              <h3>blur()</h3>
+              <p>...</p>
+            </div>
+            <div class="code_box">
+              <code>
+                
+              </code>
+            </div>
+            <figure id="blur_img"></figure>
+          </div>
+          <!--Section 2 - Filters - Subsection 4 - brightness-->
+          <div id="sect_filters_brightness" class="subsection_box">
+            <div class="text_box">
+              <h3>brightness()</h3>
+              <p>...</p>
+            </div>
+            <div class="code_box">
+              <code>
+                
+              </code>
+            </div>
+            <figure id="brightness_img"></figure>
+          </div>
+          <!--Section 2 - Filters - Subsection 5 - contrast-->
+          <div id="sect_filters_contrast" class="subsection_box">
+            <div class="text_box">
+              <h3>contrast()</h3>
+              <p>...</p>
+            </div>
+            <div class="code_box">
+              <code>
+                
+              </code>
+            </div>
+            <figure id="contrast_img"></figure>
+          </div>
+          <!--Section 2 - Filters - Subsection 6 - drop-shadow-->
+          <div id="sect_filters_shadow" class="subsection_box">
+            <div class="text_box">
+              <h3>drop-shadow()</h3>
+              <p>...</p>
+            </div>
+            <div class="code_box">
+              <code>
+                
+              </code>
+            </div>
+            <figure id="shadow_img"></figure>
+          </div>
+          <!--Section 2 - Filters - Subsection 7 - grayscale-->
+          <div id="sect_filters_grayscale" class="subsection_box">
+            <div class="text_box">
+              <h3>grayscale()</h3>
+              <p>...</p>
+            </div>
+            <div class="code_box">
+              <code>
+                
+              </code>
+            </div>
+            <figure id="grayscale_img"></figure>
+          </div>
+          <!--Section 2 - Filters - Subsection 8 - hue-rotate-->
+          <div id="sect_filters_hue" class="subsection_box">
+            <div class="text_box">
+              <h3>hue-rotate()</h3>
+              <p>...</p>
+            </div>
+            <div class="code_box">
+              <code>
+                
+              </code>
+            </div>
+            <figure id="hue_img"></figure>
+          </div>
+          <!--Section 2 - Filters - Subsection 9 - invert-->
+          <div id="sect_filters_invert" class="subsection_box">
+            <div class="text_box">
+              <h3>invert()</h3>
+              <p>...</p>
+            </div>
+            <div class="code_box">
+              <code>
+                
+              </code>
+            </div>
+            <figure id="invert_img"></figure>
+          </div>
+          <!--Section 2 - Filters - Subsection 10 - saturate-->
+          <div id="sect_filters_saturate" class="subsection_box">
+            <div class="text_box">
+              <h3>saturate()</h3>
+              <p>...</p>
+            </div>
+            <div class="code_box">
+              <code>
+                
+              </code>
+            </div>
+            <figure id="saturate_img"></figure>
+          </div>
+          <!--Section 2 - Filters - Subsection 11 - opacity-->
+          <div id="sect_filters_opacity" class="subsection_box">
+            <div class="text_box">
+              <h3>opacity()</h3>
+              <p>...</p>
+            </div>
+            <div class="code_box">
+              <code>
+                
+              </code>
+            </div>
+            <figure id="opacity_img"></figure>
+          </div>
+          <!--Section 2 - Filters - Subsection 12 - sepia-->
+          <div id="sect_filters_sepia" class="subsection_box">
+            <div class="text_box">
+              <h3>sepia()</h3>
+              <p>...</p>
+            </div>
+            <div class="code_box">
+              <code>
+                
+              </code>
+            </div>
+            <figure id="sepia_img"></figure>
+          </div>
         </section>
         <!--Section 3 - Clipping-->
         <section id="sect_clipping">
           <header class="sect_header">
             <h2>Clipping...</h2>
           </header>
-          <div class="text_box"></div>
+          <!--Section 3 - Clipping - Subsection 1 - intro-->
+          <div id="sect_clip_intro" class="subsection_box">
+            <div class="text_box">
+              <div class="code_box">
+                <code></code>
+              </div>
+              <ul class="sub_nav">
+              <li><a href="#">inset</a></li>
+              <li><a href="#">circle</a></li>
+              <li><a href="#">ellipse</a></li>
+              <li><a href="#">polygon</a></li>
+              <li><a href="#">path</a></li>  
+              <li><a href="#">and by &quot;boxes&quot;...</a></li>          
+            </ul>
+          </div>
+        </div>
+        <!--Section 3 - Clipping - Subsection 7 - clip boxes-->
+        <div id="sect_clip_box" class="subsection_box">
+          <div class="text_box">
+            <h3>Boxes...</h3>
+            <p>...</p>
+          </div>
+          <figure id="margin_img">
+            <figcaption>...</figcaption>
+          </figure>
+          <figure id="border_img">
+            <figcaption>...</figcaption>
+          </figure>
+          <figure id="padding_img">
+            <figcaption>...</figcaption>
+          </figure>
+          <figure id="content_img">
+            <figcaption>...</figcaption>
+          </figure>
+          <figure id="fill_img">
+            <figcaption>...</figcaption>
+          </figure>
+          <figure id="stroke_img">
+            <figcaption>...</figcaption>
+          </figure>
+          <figure id="view_img">
+            <figcaption>...</figcaption>
+          </figure>
+        </div>
         </section>
         <!--Section 4 - Best Practices-->
         <section id="sect_tips">
