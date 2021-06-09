@@ -55,6 +55,8 @@ var(--primary-col)
 var(--highlight-col)
 var(--text-col)
 
+Photo by <a href="https://unsplash.com/@e_d_g_a_r?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Edgar</a> on <a href="https://unsplash.com/s/photos/kitten?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
  foo {
  display
  position
