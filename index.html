@@ -75,6 +75,22 @@ Finding your way around
             <p>Continuing with my self taught frontend development coding journey I have created a series of CSS Cheat sheets. I have gone from how to select an element and position it, to how to style text based content and now I am moving on to the more visual styling components like images.</p>
             <p>Everything covered so far has looked at using images for backgrounds or bullet points so this cheat sheet is covering how to manipulate images when used as multimedia elements.</p>
             <p>The focus is using filters to apply graphical effects (which can also be used on backgrounds and borders), or by clipping the image.</p>
+            <!--gallery grid showing the different filter effects can be used as nav menu in addition to the list of text links below-->
+            <div id="gallery">
+              <ul class="gallery_grid">
+                <li><a href="#sect_filters_url"><img src="https://github.com/MazontheMoon/css_cheatsheet_images/blob/content/assets/kitty.jpg?raw=true" alt="Image of kitten"></a></li>
+                <li><a href="#sect_filters_blur">blur</a></li>
+                <li><a href="#sect_filters_brightness">brightness</a></li>
+                <li><a href="#sect_filters_contrast">contrast</a></li>
+                <li><a href="#sect_filters_shadow">drop-shadow</a></li>
+                <li><a href="#sect_filters_grayscale">grayscale</a></li>
+                <li><a href="#sect_filters_hue">hue-rotate</a></li>
+                <li><a href="#sect_filters_invert">invert</a></li>
+                <li><a href="#sect_filters_saturate">saturate</a></li>
+                <li><a href="#sect_filters_opacity">opacity</a></li>
+                <li><a href="#sect_filters_sepia">sepia</a></li>
+              </ul>
+            </div>
           </div>
         </section>
         <!--Section 2 - Filters-->
@@ -109,14 +125,15 @@ Finding your way around
           <div id="sect_filters_url" class="subsection_box">
             <div class="text_box">
               <h3>url()</h3>
-              <p>...</p>
+              <p>...is used to reference a SVG filter</p>
             </div>
             <div class="code_box">
               <code>
-                
+                .img_box{ <br>
+                  filter: url(resource.svg#elementID);<br>
+                }
               </code>
             </div>
-            <figure id="control_img"></figure>
           </div>
           <!--Section 2 - Filters - Subsection 3 - blur-->
           <div id="sect_filters_blur" class="subsection_box">
