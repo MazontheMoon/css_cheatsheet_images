@@ -1,3 +1,5 @@
+Helping me...
+
 https://mazcodesonthemoon.wordpress.com/2020/10/12/teaching-myself-to-code-css/
 https://dev.w3.org/html5/html-author/charref
 https://google.github.io/styleguide/htmlcssguide.html
@@ -8,9 +10,14 @@ https://html.spec.whatwg.org/
 https://www.w3.org/WAI/test-evaluate/preliminary/
 https://validator.w3.org/
 https://jigsaw.w3.org/css-validator/
+https://www.smashingmagazine.com/2021/05/useful-vs-code-extensions-web-developers/
 
-favicon:
-https://favicon.io/emoji-favicons/
+design:
+https://cssgradient.io/
+https://omatsuri.app/color-shades-generator
+https://www.smashingmagazine.com/2021/03/svg-generators/
+
+https://favicon.io/emoji-favicons
 
 
 <span class="really-look-at-me-text"></span> - Bold & Italic
@@ -58,7 +65,7 @@ var(--text-col)
 Photo by <a href="https://unsplash.com/@e_d_g_a_r?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Edgar</a> on <a href="https://unsplash.com/s/photos/kitten?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
 
-https://github.com/MazontheMoon/css_cheatsheet_images/blob/content/assets/kitty.jpg
+https://github.com/MazontheMoon/css_cheatsheet_images/blob/content/assets/kitty.jpg?raw=true
 
 
  foo {
