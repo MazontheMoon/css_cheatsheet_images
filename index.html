@@ -90,8 +90,8 @@ Finding your way around
                 <li><a href="#sect_filters_opacity"><img src="https://github.com/MazontheMoon/css_cheatsheet_images/blob/content/assets/kitty.jpg?raw=true" alt="Image of sitting striped kitten with opacity filter applied" width="150px"></a></li>
                 <li><a href="#sect_filters_sepia"><img src="https://github.com/MazontheMoon/css_cheatsheet_images/blob/content/assets/kitty.jpg?raw=true" alt="Image of sitting striped kitten with sepia filter applied" width="150px"></a></li>
               </ul>
-            </div>
-          </div>
+            </div><!--end of gallery-->
+          </div><!--end of text_box-->
         </section>
         <!--Section 2 - Filters-->
         <section id="sect_filters">
@@ -105,7 +105,7 @@ Finding your way around
                 <code>
                   filter:function(value);
                 </code>
-              </div>
+              </div><!--end of code_box-->
               <ul class="sub_nav">
                 <li><a href="#sect_filters_url">url</a></li>
                 <li><a href="#sect_filters_blur">blur</a></li>
@@ -119,180 +119,202 @@ Finding your way around
                 <li><a href="#sect_filters_opacity">opacity</a></li>
                 <li><a href="#sect_filters_sepia">sepia</a></li>
               </ul>
-            </div>
-          </div>
+            </div><!--end of text_box-->
+          </div><!--end of subsection-->
           <!--Section 2 - Filters - Subsection 2 - url-->
           <div id="sect_filters_url" class="subsection_box">
             <div class="text_box">
-              <h3>url()</h3>
-              <p>...is used to reference a SVG filter</p>
-            </div>
-            <div class="code_box">
-              <code>
-                .img_box{ <br>
-                  filter: url(resource.svg#elementID);<br>
-                }
-              </code>
-            </div>
-          </div>
+              <div class="sub_header">
+                <h3>url()</h3>
+                <p>...is used to reference a SVG filter</p>
+              </div> <!--end of subsection header-->
+              <div class="code_box">
+                <code>
+                 .img_box{ <br>
+                    filter: url(resource.svg#elementID);<br>
+                  }
+                </code>
+              </div><!--end of code_box-->
+            </div><!--end of text_box-->
+          </div><!--end of subsection-->
           <!--Section 2 - Filters - Subsection 3 - blur-->
           <div id="sect_filters_blur" class="subsection_box">
             <div class="text_box">
-              <h3>blur()</h3>
+              <div class="sub_header">
+                <h3>blur()</h3>
               <p>...applies Gaussian blur (does not accept percentages as value)</p>
-            </div>
-            <div class="code_box">
-              <code>
-                img { <br>
-                  filter: blur(5px);<br>
-                }
-              </code>
-            </div>
+              </div><!--end of subsection header-->              
+              <div class="code_box">
+                <code>
+                 img { <br>
+                   filter: blur(5px);<br>
+                  }
+                </code>
+              </div><!--end of code_box-->
+            </div><!--end of text_box-->
             <figure id="blur_img">
               <figcaption></figcaption>
               <img src="https://github.com/MazontheMoon/css_cheatsheet_images/blob/content/assets/kitty.jpg?raw=true" alt="Image of sitting striped kitten with blur filter applied" width="250px">
             </figure>
-          </div>
+          </div><!--end of subsection-->
           <!--Section 2 - Filters - Subsection 4 - brightness-->
           <div id="sect_filters_brightness" class="subsection_box">
             <div class="text_box">
-              <h3>brightness()</h3>
-              <p>...as it sounds (0% = black and 100% is unchanged – can also go above 100%!)</p>
-            </div>
-            <div class="code_box">
-              <code>
-                img { <br>
-                  filter: brightness(0.5);<br>
-                }
-              </code>
-            </div>
+              <div class="sub_header">
+                <h3>brightness()</h3>
+                <p>...as it sounds (0% = black and 100% is unchanged – can also go above 100%!)</p>
+              </div><!--end of subsection header-->   
+              <div class="code_box">
+                <code>
+                  img { <br>
+                    filter: brightness(0.5);<br>
+                 }
+               </code>
+              </div><!--end of code_box-->
+            </div><!--end of text_box-->
             <figure id="brightness_img">
               <figcaption></figcaption>
               <img src="https://github.com/MazontheMoon/css_cheatsheet_images/blob/content/assets/kitty.jpg?raw=true" alt="Image of sitting striped kitten with brightness filter applied" width="250px">
             </figure>
-          </div>
+          </div><!--end of subsection-->
           <!--Section 2 - Filters - Subsection 5 - contrast-->
           <div id="sect_filters_contrast" class="subsection_box">
             <div class="text_box">
-              <h3>contrast()</h3>
-              <p>...as it sounds (0% = gray and 100% is unchanged – and can go above 100%!)</p>
-            </div>
-            <div class="code_box">
-              <code>
-                img { <br>
-                  filter: contrast(200%);<br>
-                }
-              </code>
-            </div>
+              <div class="sub_header">
+                <h3>contrast()</h3>
+                <p>...as it sounds (0% = gray and 100% is unchanged – and can go above 100%!)</p>
+              </div><!--end of subsection header--> 
+              <div class="code_box">
+                <code>
+                 img { <br>
+                   filter: contrast(200%);<br>
+                  }
+               </code>
+              </div><!--end of code_box-->
+             </div><!--end of text_box-->
             <figure id="contrast_img">
               <figcaption></figcaption>
             </figure>
-          </div>
+          </div><!--end of subsection-->
           <!--Section 2 - Filters - Subsection 6 - drop-shadow-->
           <div id="sect_filters_shadow" class="subsection_box">
             <div class="text_box">
-              <h3>drop-shadow()</h3>
-              <p>...</p>
-            </div>
-            <div class="code_box">
-              <code>
-                
-              </code>
-            </div>
+              <div class="sub_header">
+                <h3>drop-shadow()</h3>
+                <p>...</p>
+              </div><!--end of subsection header-->
+              <div class="code_box">
+                <code>
+
+               </code>
+              </div><!--end of code_box-->
+            </div><!--end of text_box-->
             <figure id="shadow_img">
               <figcaption></figcaption>
             </figure>
-          </div>
+          </div><!--end of subsection-->
           <!--Section 2 - Filters - Subsection 7 - grayscale-->
           <div id="sect_filters_grayscale" class="subsection_box">
             <div class="text_box">
-              <h3>grayscale()</h3>
-              <p>...</p>
-            </div>
-            <div class="code_box">
-              <code>
-                
-              </code>
-            </div>
+              <div class="sub_header">
+                <h3>grayscale()</h3>
+                <p>...</p>
+              </div><!--end of subsection header-->
+              <div class="code_box">
+               <code>
+
+               </code>
+             </div><!--end of code_box-->
+            </div><!--end of text_box-->
             <figure id="grayscale_img">
               <figcaption></figcaption>
             </figure>
-          </div>
+          </div> <!--end of subsection-->
           <!--Section 2 - Filters - Subsection 8 - hue-rotate-->
           <div id="sect_filters_hue" class="subsection_box">
             <div class="text_box">
-              <h3>hue-rotate()</h3>
-              <p>...</p>
-            </div>
-            <div class="code_box">
-              <code>
-                
-              </code>
-            </div>
+              <div class="sub_header">
+                <h3>hue-rotate()</h3>
+                <p>...</p>
+              </div><!--end of subsection header-->
+              <div class="code_box">
+               <code>
+
+                </code>
+             </div><!--end of code_box-->
+            </div><!--end of text_box-->
             <figure id="hue_img">
               <figcaption></figcaption>
             </figure>
-          </div>
+          </div><!--end of subsection header-->
           <!--Section 2 - Filters - Subsection 9 - invert-->
           <div id="sect_filters_invert" class="subsection_box">
             <div class="text_box">
-              <h3>invert()</h3>
-              <p>...</p>
-            </div>
-            <div class="code_box">
-              <code>
-                
-              </code>
-            </div>
+              <div class="sub_header">
+                <h3>invert()</h3>
+               <p>...</p>
+              </div><!--end of subsection header-->
+             <div class="code_box">
+                <code>
+                  
+                </code>
+             </div><!--end of code_box-->
+            </div><!--end of text_box-->
             <figure id="invert_img">
               <figcaption></figcaption>
             </figure>
-          </div>
+          </div><!--end of subsection header-->
           <!--Section 2 - Filters - Subsection 10 - saturate-->
           <div id="sect_filters_saturate" class="subsection_box">
             <div class="text_box">
-              <h3>saturate()</h3>
-              <p>...</p>
-            </div>
-            <div class="code_box">
-              <code>
-                
-              </code>
-            </div>
+              <div class="sub_header">
+                <h3>saturate()</h3>
+                <p>...</p>
+              </div><!--end of subsection header-->
+             <div class="code_box">
+               <code>
+
+                </code>
+             </div><!--end of code_box-->
+            </div><!--end of text_box-->
             <figure id="saturate_img">
               <figcaption></figcaption>
             </figure>
-          </div>
+          </div><!--end of subsection header-->
           <!--Section 2 - Filters - Subsection 11 - opacity-->
           <div id="sect_filters_opacity" class="subsection_box">
             <div class="text_box">
-              <h3>opacity()</h3>
-              <p>...</p>
-            </div>
-            <div class="code_box">
-              <code>
-                
-              </code>
-            </div>
+              <div class="sub_header">
+                <h3>opacity()</h3>
+                <p>...</p>
+              </div><!--end of subsection header-->
+              <div class="code_box">
+                <code>
+                  
+               </code>
+             </div><!--end of code_box-->
+            </div><!--end of text_box-->
             <figure id="opacity_img">
               <figcaption></figcaption>
             </figure>
-          </div>
+          </div><!--end of subsection header-->
           <!--Section 2 - Filters - Subsection 12 - sepia-->
           <div id="sect_filters_sepia" class="subsection_box">
             <div class="text_box">
-              <h3>sepia()</h3>
-              <p>...</p>
-            </div>
-            <div class="code_box">
-              <code>
-                
-              </code>
-            </div>
+              <div class="sub_header">
+                <h3>sepia()</h3>
+                <p>...</p>
+              </div><!--end of subsection header-->
+              <div class="code_box">
+               <code>
+                 
+                </code>
+              </div><!--end of code_box-->
+             </div><!--end of text_box-->
             <figure id="sepia_img">
               <figcaption></figcaption>
             </figure>
-          </div>
+          </div><!--end of subsection header-->
         </section>
         <!--Section 3 - Clipping-->
         <section id="sect_clipping">
