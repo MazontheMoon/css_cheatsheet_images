@@ -38,17 +38,16 @@ Finding your way around
   4.l subsection 12 - sepia
 5. Section 3 - Clipping  
   5.a subsection 1 - intro
-  5.b subsection 2 - box
-  5.c subsection 3 - inset
-  5.d subsection 4 - circle
-  5.e subsection 5 - ellipse
-  5.f subsection 6 - polygon
-  5.g subsection 7 - path
-6. Section 3 - Best Practices
+  5.b subsection 2 - inset
+  5.c subsection 3 - circle
+  5.d subsection 4 - ellipse
+  5.e subsection 5 - polygon
+  5.f subsection 6 - path
+  5.g subsection 7 - box
+6. Section 4 - Best Practices
 7. Footer
   7.a About
   7.b Author
-  7.c Social media
 ------------------------->
   <body>
     <!--Container box-->
@@ -60,30 +59,351 @@ Finding your way around
       <!--nav menu-->
       <nav>
         <ul>
-          <li><a href="#sec_filters">Filters</a></li>
-          <li><a href="#sec_clipping">Clipping</a></li>
+          <li><a href="#sect_filters">Filters</a></li>
+          <li><a href="#sect_clipping">Clipping</a></li>
+          <li><a href="#sect_tips">Tips</a></li>
         </ul>
       </nav>
       <!--main content for page-->
       <main>
         <!--Section 1 - Intro-->
-        <section id="sec_intro"></section>
+        <section id="sect_intro">
+          <header class="sect_header">
+            <h2>The road so far...</h2>
+          </header>
+          <div class="text_box">
+            <p>Continuing with my self taught frontend development coding journey I have created a series of CSS Cheat sheets. I have gone from how to select an element and position it, to how to style text based content and now I am moving on to the more visual styling components like images.</p>
+            <p>Everything covered so far has looked at using images for backgrounds or bullet points so this cheat sheet is covering how to manipulate images when used as multimedia elements.</p>
+            <p>The focus is using filters to apply graphical effects (which can also be used on backgrounds and borders), or by clipping the image.</p>
+            <!--gallery grid showing the different filter effects can be used as nav menu in addition to the list of text links below-->
+            <div id="gallery">
+              <ul>
+                <li><a href="#sect_filters_url"><img src="https://github.com/MazontheMoon/css_cheatsheet_images/blob/content/assets/kitty.jpg?raw=true" alt="Image of sitting striped kitten" width="150px"></a></li>
+                <li><a href="#sect_filters_blur"><img src="https://github.com/MazontheMoon/css_cheatsheet_images/blob/content/assets/kitty.jpg?raw=true" alt="Image of sitting striped kitten with blur filter applied" width="150px"></a></li>
+                <li><a href="#sect_filters_brightness"><img src="https://github.com/MazontheMoon/css_cheatsheet_images/blob/content/assets/kitty.jpg?raw=true" alt="Image of sitting striped kitten with brightness filter applied" width="150px"></a></li>
+                <li><a href="#sect_filters_contrast"><img src="https://github.com/MazontheMoon/css_cheatsheet_images/blob/content/assets/kitty.jpg?raw=true" alt="Image of sitting striped kitten with contrast filter applied" width="150px"></a></li>
+                <li><a href="#sect_filters_shadow"><img src="https://github.com/MazontheMoon/css_cheatsheet_images/blob/content/assets/kitty.jpg?raw=true" alt="Image of sitting striped kitten with drop-shadow filter applied" width="150px"></a></li>
+                <li><a href="#sect_filters_grayscale"><img src="https://github.com/MazontheMoon/css_cheatsheet_images/blob/content/assets/kitty.jpg?raw=true" alt="Image of sitting striped kitten with grayscale filter applied" width="150px"></a></li>
+                <li><a href="#sect_filters_hue"><img src="https://github.com/MazontheMoon/css_cheatsheet_images/blob/content/assets/kitty.jpg?raw=true" alt="Image of sitting striped kitten with hur rotation filter applied" width="150px"></a></li>
+                <li><a href="#sect_filters_invert"><img src="https://github.com/MazontheMoon/css_cheatsheet_images/blob/content/assets/kitty.jpg?raw=true" alt="Image of sitting striped kitten with invert filter applied" width="150px"></a></li>
+                <li><a href="#sect_filters_saturate"><img src="https://github.com/MazontheMoon/css_cheatsheet_images/blob/content/assets/kitty.jpg?raw=true" alt="Image of sitting striped kitten with colour saturation filter applied" width="150px"></a></li>
+                <li><a href="#sect_filters_opacity"><img src="https://github.com/MazontheMoon/css_cheatsheet_images/blob/content/assets/kitty.jpg?raw=true" alt="Image of sitting striped kitten with opacity filter applied" width="150px"></a></li>
+                <li><a href="#sect_filters_sepia"><img src="https://github.com/MazontheMoon/css_cheatsheet_images/blob/content/assets/kitty.jpg?raw=true" alt="Image of sitting striped kitten with sepia filter applied" width="150px"></a></li>
+              </ul>
+            </div><!--end of gallery-->
+          </div><!--end of text_box-->
+        </section>
         <!--Section 2 - Filters-->
-        <section id="sec_filters"></section>
+        <section id="sect_filters">
+          <header class="sect_header">
+            <h2>Filters...</h2>
+          </header>
+          <!--Section 2 - Filters - Subsection 1 - intro-->
+          <div id="sect_filters_intro" class="subsection_box">
+            <div class="text_box">
+              <div class="code_box">
+                <code>
+                  filter:function(value);
+                </code>
+              </div><!--end of code_box-->
+              <ul class="sub_nav">
+                <li><a href="#sect_filters_url">url</a></li>
+                <li><a href="#sect_filters_blur">blur</a></li>
+                <li><a href="#sect_filters_brightness">brightness</a></li>
+                <li><a href="#sect_filters_contrast">contrast</a></li>
+                <li><a href="#sect_filters_shadow">drop-shadow</a></li>
+                <li><a href="#sect_filters_grayscale">grayscale</a></li>
+                <li><a href="#sect_filters_hue">hue-rotate</a></li>
+                <li><a href="#sect_filters_invert">invert</a></li>
+                <li><a href="#sect_filters_saturate">saturate</a></li>
+                <li><a href="#sect_filters_opacity">opacity</a></li>
+                <li><a href="#sect_filters_sepia">sepia</a></li>
+              </ul>
+            </div><!--end of text_box-->
+          </div><!--end of subsection-->
+          <!--Section 2 - Filters - Subsection 2 - url-->
+          <div id="sect_filters_url" class="subsection_box">
+            <div class="text_box">
+              <div class="sub_header">
+                <h3>url()</h3>
+                <p>...is used to reference a SVG filter</p>
+              </div> <!--end of subsection header-->
+              <div class="code_box">
+                <code>
+                 .img_box{ <br>
+                    filter: url(resource.svg#elementID);<br>
+                  }
+                </code>
+              </div><!--end of code_box-->
+            </div><!--end of text_box-->
+          </div><!--end of subsection-->
+          <!--Section 2 - Filters - Subsection 3 - blur-->
+          <div id="sect_filters_blur" class="subsection_box">
+            <div class="text_box">
+              <div class="sub_header">
+                <h3>blur()</h3>
+              <p>...applies Gaussian blur (does not accept percentages as value)</p>
+              </div><!--end of subsection header-->              
+              <div class="code_box">
+                <code>
+                 img { <br>
+                   filter: blur(5px);<br>
+                  }
+                </code>
+              </div><!--end of code_box-->
+            </div><!--end of text_box-->
+            <figure id="blur_img">
+              <figcaption></figcaption>
+              <img src="https://github.com/MazontheMoon/css_cheatsheet_images/blob/content/assets/kitty.jpg?raw=true" alt="Image of sitting striped kitten with blur filter applied" width="250px">
+            </figure>
+          </div><!--end of subsection-->
+          <!--Section 2 - Filters - Subsection 4 - brightness-->
+          <div id="sect_filters_brightness" class="subsection_box">
+            <div class="text_box">
+              <div class="sub_header">
+                <h3>brightness()</h3>
+                <p>...as it sounds (0% = black and 100% is unchanged – can also go above 100%!)</p>
+              </div><!--end of subsection header-->   
+              <div class="code_box">
+                <code>
+                  img { <br>
+                    filter: brightness(0.5);<br>
+                 }
+               </code>
+              </div><!--end of code_box-->
+            </div><!--end of text_box-->
+            <figure id="brightness_img">
+              <figcaption></figcaption>
+              <img src="https://github.com/MazontheMoon/css_cheatsheet_images/blob/content/assets/kitty.jpg?raw=true" alt="Image of sitting striped kitten with brightness filter applied" width="250px">
+            </figure>
+          </div><!--end of subsection-->
+          <!--Section 2 - Filters - Subsection 5 - contrast-->
+          <div id="sect_filters_contrast" class="subsection_box">
+            <div class="text_box">
+              <div class="sub_header">
+                <h3>contrast()</h3>
+                <p>...as it sounds (0% = gray and 100% is unchanged – and can go above 100%!)</p>
+              </div><!--end of subsection header--> 
+              <div class="code_box">
+                <code>
+                 img { <br>
+                   filter: contrast(200%);<br>
+                  }
+               </code>
+              </div><!--end of code_box-->
+             </div><!--end of text_box-->
+            <figure id="contrast_img">
+              <figcaption></figcaption>
+            </figure>
+          </div><!--end of subsection-->
+          <!--Section 2 - Filters - Subsection 6 - drop-shadow-->
+          <div id="sect_filters_shadow" class="subsection_box">
+            <div class="text_box">
+              <div class="sub_header">
+                <h3>drop-shadow()</h3>
+                <p>...</p>
+              </div><!--end of subsection header-->
+              <div class="code_box">
+                <code>
+
+               </code>
+              </div><!--end of code_box-->
+            </div><!--end of text_box-->
+            <figure id="shadow_img">
+              <figcaption></figcaption>
+            </figure>
+          </div><!--end of subsection-->
+          <!--Section 2 - Filters - Subsection 7 - grayscale-->
+          <div id="sect_filters_grayscale" class="subsection_box">
+            <div class="text_box">
+              <div class="sub_header">
+                <h3>grayscale()</h3>
+                <p>...</p>
+              </div><!--end of subsection header-->
+              <div class="code_box">
+               <code>
+
+               </code>
+             </div><!--end of code_box-->
+            </div><!--end of text_box-->
+            <figure id="grayscale_img">
+              <figcaption></figcaption>
+            </figure>
+          </div> <!--end of subsection-->
+          <!--Section 2 - Filters - Subsection 8 - hue-rotate-->
+          <div id="sect_filters_hue" class="subsection_box">
+            <div class="text_box">
+              <div class="sub_header">
+                <h3>hue-rotate()</h3>
+                <p>...</p>
+              </div><!--end of subsection header-->
+              <div class="code_box">
+               <code>
+
+                </code>
+             </div><!--end of code_box-->
+            </div><!--end of text_box-->
+            <figure id="hue_img">
+              <figcaption></figcaption>
+            </figure>
+          </div><!--end of subsection header-->
+          <!--Section 2 - Filters - Subsection 9 - invert-->
+          <div id="sect_filters_invert" class="subsection_box">
+            <div class="text_box">
+              <div class="sub_header">
+                <h3>invert()</h3>
+               <p>...</p>
+              </div><!--end of subsection header-->
+             <div class="code_box">
+                <code>
+                  
+                </code>
+             </div><!--end of code_box-->
+            </div><!--end of text_box-->
+            <figure id="invert_img">
+              <figcaption></figcaption>
+            </figure>
+          </div><!--end of subsection header-->
+          <!--Section 2 - Filters - Subsection 10 - saturate-->
+          <div id="sect_filters_saturate" class="subsection_box">
+            <div class="text_box">
+              <div class="sub_header">
+                <h3>saturate()</h3>
+                <p>...</p>
+              </div><!--end of subsection header-->
+             <div class="code_box">
+               <code>
+
+                </code>
+             </div><!--end of code_box-->
+            </div><!--end of text_box-->
+            <figure id="saturate_img">
+              <figcaption></figcaption>
+            </figure>
+          </div><!--end of subsection header-->
+          <!--Section 2 - Filters - Subsection 11 - opacity-->
+          <div id="sect_filters_opacity" class="subsection_box">
+            <div class="text_box">
+              <div class="sub_header">
+                <h3>opacity()</h3>
+                <p>...</p>
+              </div><!--end of subsection header-->
+              <div class="code_box">
+                <code>
+                  
+               </code>
+             </div><!--end of code_box-->
+            </div><!--end of text_box-->
+            <figure id="opacity_img">
+              <figcaption></figcaption>
+            </figure>
+          </div><!--end of subsection header-->
+          <!--Section 2 - Filters - Subsection 12 - sepia-->
+          <div id="sect_filters_sepia" class="subsection_box">
+            <div class="text_box">
+              <div class="sub_header">
+                <h3>sepia()</h3>
+                <p>...</p>
+              </div><!--end of subsection header-->
+              <div class="code_box">
+               <code>
+                 
+                </code>
+              </div><!--end of code_box-->
+             </div><!--end of text_box-->
+            <figure id="sepia_img">
+              <figcaption></figcaption>
+            </figure>
+          </div><!--end of subsection header-->
+        </section>
         <!--Section 3 - Clipping-->
-        <section id="sec_clipping"></section>
-        <section id="sec_tips"></section>      
+        <section id="sect_clipping">
+          <header class="sect_header">
+            <h2>Clipping...</h2>
+          </header>
+          <!--Section 3 - Clipping - Subsection 1 - intro-->
+          <div id="sect_clip_intro" class="subsection_box">
+            <div class="text_box">
+              <div class="code_box">
+                <code></code>
+              </div>
+              <ul class="sub_nav">
+              <li><a href="#">inset</a></li>
+              <li><a href="#">circle</a></li>
+              <li><a href="#">ellipse</a></li>
+              <li><a href="#">polygon</a></li>
+              <li><a href="#">path</a></li>  
+              <li><a href="#">and by &quot;boxes&quot;...</a></li>          
+            </ul>
+          </div>
+        </div>
+        <!--Section 3 - Clipping - Subsection 7 - clip boxes-->
+        <div id="sect_clip_box" class="subsection_box">
+          <div class="text_box">
+            <h3>Boxes...</h3>
+            <p>...</p>
+          </div>
+          <figure id="margin_img">
+            <figcaption>...</figcaption>
+          </figure>
+          <figure id="border_img">
+            <figcaption>...</figcaption>
+          </figure>
+          <figure id="padding_img">
+            <figcaption>...</figcaption>
+          </figure>
+          <figure id="content_img">
+            <figcaption>...</figcaption>
+          </figure>
+          <figure id="fill_img">
+            <figcaption>...</figcaption>
+          </figure>
+          <figure id="stroke_img">
+            <figcaption>...</figcaption>
+          </figure>
+          <figure id="view_img">
+            <figcaption>...</figcaption>
+          </figure>
+        </div>
+        </section>
+        <!--Section 4 - Best Practices-->
+        <section id="sect_tips">
+          <header class="sect_header">
+            <h2>Tips and Tricks...</h2>
+          </header>
+          <div class="text_box"></div>
+          <div class="code_box">
+            <code></code>
+          </div>
+        </section>      
       </main>
       <!--footer-->
       <footer>
+        <div id="about">
+          <p>This project is one in my expanding collection of CSS cheat sheets that I've created on my journey towards becoming a frontend developer. You might also like to see my other creations (there is some sort of method to the madness):</p>
+          <ul>
+            <li><a href="#">Cascade &amp; Inheritance</a></li>
+            <li><a href="#">Box Model</a></li>
+            <li><a href="#">Units &amp; Values</a></li>
+            <li><a href="#">Selectors</a></li>
+            <li><a href="#">Display &amp; Positioning</a></li>
+            <li><a href="#">Flexbox</a></li>
+            <li><a href="#">Grid</a></li>
+            <li><a href="#">Backgrounds</a></li>
+            <li><a href="#">Text &amp; Fonts</a></li>
+            <li><a href="#">Lists &amp; Links</a></li>
+          </ul>
+        </div>
         <!--Made by Me  - Github, Codepen, LinkedIn and Wordpress blog-->
         <div id="made_by_me">
-          <p>Designed by <abbr title="Mary Ronan">MazOnTheMoon</abbr> 2021</p>
-          <p><a href="https://www.linkedin.com/in/mary-ronan/" target="_blank"> <span class="fab fa-linkedin"> </span></a>
-            <a href="https://github.com/MazontheMoon" target="_blank"> <span class="fab fa-github-square"> </span></a>
-            <a href="https://codepen.io/mazonthemoon/#" target="_blank"> <span class="fab fa-codepen"> </span></a>
-            <a href="https://mazcodesonthemoon.wordpress.com/2020/10/12/teaching-myself-to-code-css/" target="_blank"> <span class="fab fa-wordpress"> </span></a>
-          </p>
+          <p>I am <abbr title="Mary Ronan">MazOnTheMoon</abbr></p>
+          <ul>
+            <li><a href="https://www.linkedin.com/in/mary-ronan/" target="_blank"> <span class="fab fa-linkedin"> </span></a></li>
+            <li><a href="https://github.com/MazontheMoon" target="_blank"> <span class="fab fa-github-square"> </span></a></li>
+            <li><a href="https://codepen.io/mazonthemoon/#" target="_blank"> <span class="fab fa-codepen"> </span></a></li>
+            <li><a href="https://mazcodesonthemoon.wordpress.com/2020/10/12/teaching-myself-to-code-css/" target="_blank"> <span class="fab fa-wordpress"> </span></a></li>
+          </ul>
+          <p>A <span class="fab fa-html5"></span> and <span class="fab fa-css3"></span> project in 2021</p>
         </div>
         <!--Back to top shortcut-->
       </footer>
