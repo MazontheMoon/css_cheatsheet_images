@@ -106,6 +106,14 @@ Finding your way around
                   filter:function(value);
                 </code>
               </div><!--end of code_box-->
+              <p>Filters can be combined:</p>
+              <div class="code_box">
+                <code>
+                  img {<br>
+                    filter: contrast (175%) brightness (75%);<br>
+                    }
+                </code>
+              </div><!--end of code_box-->
               <ul class="sub_nav">
                 <li><a href="#sect_filters_url">url</a></li>
                 <li><a href="#sect_filters_blur">blur</a></li>
@@ -208,11 +216,14 @@ Finding your way around
             <div class="text_box">
               <div class="sub_header">
                 <h3>drop-shadow()</h3>
-                <p>...</p>
+                <p> ...applies a drop-shadow effect to the input image.</p>
               </div><!--end of subsection header-->
               <div class="code_box">
                 <code>
-
+                  img {<br>
+                    <span class="code_box_comment">/*filter: drop-shadow(offset-x offset-y blur-radius color);*/</span><br>
+                    filter: drop-shadow(5px 5px 2px black); <br>
+                    }
                </code>
               </div><!--end of code_box-->
             </div><!--end of text_box-->
@@ -227,11 +238,12 @@ Finding your way around
             <div class="text_box">
               <div class="sub_header">
                 <h3>grayscale()</h3>
-                <p>...</p>
+                <p>...converts image to greyscale (0% is unchanged and 100% is completely greyscale)</p>
               </div><!--end of subsection header-->
               <div class="code_box">
-               <code>
-
+               <code>img {<br>
+                filter: grayscale(50%);<br>
+               }
                </code>
              </div><!--end of code_box-->
             </div><!--end of text_box-->
@@ -246,11 +258,13 @@ Finding your way around
             <div class="text_box">
               <div class="sub_header">
                 <h3>hue-rotate()</h3>
-                <p>...</p>
+                <p>...applies hue-rotation to the image (different colour on colour wheel)</p>
               </div><!--end of subsection header-->
               <div class="code_box">
                <code>
-
+                img {<br>
+                  filter: hue-rotate(90deg);<br>
+                  }
                 </code>
              </div><!--end of code_box-->
             </div><!--end of text_box-->
@@ -265,11 +279,13 @@ Finding your way around
             <div class="text_box">
               <div class="sub_header">
                 <h3>invert()</h3>
-               <p>...</p>
+               <p>...inverts the colours (100% is opposite colour on wheel and 0% is unchanged)</p>
               </div><!--end of subsection header-->
              <div class="code_box">
                 <code>
-                  
+                  img {<br>
+                    filter: invert(33%);<br>
+                    }                  
                 </code>
              </div><!--end of code_box-->
             </div><!--end of text_box-->
@@ -284,12 +300,13 @@ Finding your way around
             <div class="text_box">
               <div class="sub_header">
                 <h3>saturate()</h3>
-                <p>...</p>
+                <p>...saturates the input image (0% is unsaturated and 100% is unchanged and can over-saturate by going over 100%)</p>
               </div><!--end of subsection header-->
              <div class="code_box">
                <code>
-
-                </code>
+                img {<br>
+                  filter: saturate(200%);<br>
+                  }
              </div><!--end of code_box-->
             </div><!--end of text_box-->
             <!--container for image example with applied filter-->
@@ -303,11 +320,13 @@ Finding your way around
             <div class="text_box">
               <div class="sub_header">
                 <h3>opacity()</h3>
-                <p>...</p>
+                <p>...changes “see-throughness“ (0% is completely transparent and 100% is unchanged)</p>
               </div><!--end of subsection header-->
               <div class="code_box">
                 <code>
-                  
+                  img {<br>
+                    filter: opacity(50%);<br>
+                    }                  
                </code>
              </div><!--end of code_box-->
             </div><!--end of text_box-->
@@ -322,11 +341,12 @@ Finding your way around
             <div class="text_box">
               <div class="sub_header">
                 <h3>sepia()</h3>
-                <p>...</p>
+                <p>...converts image to sepia colouration (0% is unchanged and goes to100% )</p>
               </div><!--end of subsection header-->
               <div class="code_box">
-               <code>
-                 
+               <code>img {<br>
+                filter: sepia(20%);<br>
+                }                 
                 </code>
               </div><!--end of code_box-->
              </div><!--end of text_box-->

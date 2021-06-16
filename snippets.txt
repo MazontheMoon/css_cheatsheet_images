@@ -26,6 +26,8 @@ https://favicon.io/emoji-favicons
 
 <span class="code-word"></span> - Highlight with background colour/font and size
 
+<span class="code_box_comment"></span>
+
 
 FONT:
 
