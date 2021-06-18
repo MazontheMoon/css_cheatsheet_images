@@ -379,7 +379,7 @@ Finding your way around
               <li><a href="#sect_clip_ellipse">ellipse</a></li>
               <li><a href="#sect_clip_polygon">polygon</a></li>
               <li><a href="#sect_clip_path">path</a></li>  
-              <li><a href="#sect_clip_box">and by &quot;boxes&quot;...</a></li>          
+              <li><a href="#sect_clip_box">and by &quot;boxes&quot;...</a><li>          
             </ul>
           </div><!--end of text_box-->
         </div><!--end of subsection-->
@@ -391,7 +391,7 @@ Finding your way around
             </div><!--end of subsection header-->
             <div class="code_box">
              <code>img {<br>
-              <br>
+              clip-path: inset(100px 50px);<br>
               }
              </code>
             </div><!--end of code_box-->
@@ -409,7 +409,7 @@ Finding your way around
             </div><!--end of subsection header-->
             <div class="code_box">
              <code>img {<br>
-              <br>
+              clip-path: circle(50px at 0 100px);<br>
               }
              </code>
             </div><!--end of code_box-->
@@ -427,7 +427,7 @@ Finding your way around
             </div><!--end of subsection header-->
             <div class="code_box">
              <code>img {<br>
-              <br>
+              clip-path: ellipse(50px 60px at 0 10% 20%);<br>
               }
              </code>
             </div><!--end of code_box-->
@@ -445,9 +445,10 @@ Finding your way around
             </div><!--end of subsection header-->
             <div class="code_box">
              <code>img {<br>
-              <br>
+              clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);<br>
               }
              </code>
+             <p>Use this <a href="https://bennettfeely.com/clippy/">clippy</a>tool</p>
             </div><!--end of code_box-->
             <!--example of polygon clip on example image-->
             <figure id="polygon_img">
@@ -462,7 +463,7 @@ Finding your way around
             </div><!--end of subsection header-->
             <div class="code_box">
              <code>img {<br>
-              <br>
+              clip-path: path('M0.5,1 C0.5,1,0,0.7,0,0.3 A0.25,0.25,1,1,1,0.5,0.3 A0.25,0.25,1,1,1,1,0.3 C1,0.7,0.5,1,0.5,1 Z');<br>
               }
              </code>
             </div><!--end of code_box-->
@@ -507,6 +508,16 @@ Finding your way around
           <figure id="view_img">
             <figcaption>...</figcaption>
           </figure>
+          <div class="text_box">
+            <p>There are combos too such as...</p>
+            <div class="code_box">
+              <code>
+                img {<br>
+                  clip-path: padding-box circle(50px at 0 100px);<br>
+                  }
+              </code>
+            </div> <!--end of code_box-->
+           </div><!--end of text_box-->
         </div> <!--end of subsection-->
         </section>
         <!--Section 4 - Best Practices-->
