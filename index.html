@@ -543,9 +543,27 @@ Finding your way around
             <h2>Tips and Tricks...</h2>
           </header>
           <div class="text_box">
+            <p>There can also be a situation where the image doesn't load and while there is always the alt text there is also a more stylish way of handling images with broken links</p>
            <div class="code_box">
-             <code></code>
+             <code>
+              img:after {<br>
+                <span class="code_box_comment">/*in case of image not found*/</span><br>
+                display: inherit;<br>
+                position: absolute;<br>
+                top: 0;<br>
+                left: 0;<br>
+                width: 100%;<br>
+                padding: 5px;<br>
+                border: 1px dashed slategrey;<br>
+                background-color: lightgrey;<br>
+                z-index: 1;<br>
+                font-family: verdana;<br>
+                font-size: 0.8em;<br>
+                content: "" attr(alt) " was not found";<br>
+                }
+             </code>
            </div> <!--end of code_box-->
+           <p>And don't forget about the <span class="code-word">inherit</span>, <span class="code-word">initial</span> and <span class="code-word">unset</span> values!</p>
           </div><!--end of text_box-->
         </section>      
       </main>
