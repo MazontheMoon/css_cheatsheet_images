@@ -59,8 +59,8 @@ Finding your way around
       <!--nav menu-->
       <nav>
         <ul>
-          <li><a href="#sect_filters">Filters</a></li>
-          <li><a href="#sect_clipping">Clipping</a></li>
+          <li><a href="#sect_filters">Filter</a></li>
+          <li><a href="#sect_clipping">Clip</a></li>
           <li><a href="#sect_tips">Tips</a></li>
         </ul>
       </nav>
@@ -231,6 +231,7 @@ Finding your way around
             <figure id="shadow_img">
               <figcaption></figcaption>
               <!--example of drop-shadow filter on example image-->
+              <img src="https://github.com/MazontheMoon/css_cheatsheet_images/blob/content/assets/kitty.jpg?raw=true" alt="Image of sitting striped kitten with drop-shadow filter applied" width="250px">
             </figure>
           </div><!--end of subsection-->
           <!--Section 2 - Filters - Subsection 7 - grayscale-->
@@ -251,6 +252,7 @@ Finding your way around
             <figure id="grayscale_img">
               <figcaption></figcaption>
               <!--example of grayscale filter on example image-->
+              <img src="https://github.com/MazontheMoon/css_cheatsheet_images/blob/content/assets/kitty.jpg?raw=true" alt="Image of sitting striped kitten with grayscale filter applied" width="250px">
             </figure>
           </div> <!--end of subsection-->
           <!--Section 2 - Filters - Subsection 8 - hue-rotate-->
@@ -272,6 +274,7 @@ Finding your way around
             <figure id="hue_img">
               <figcaption></figcaption>
               <!--example of hue filter on example image-->
+              <img src="https://github.com/MazontheMoon/css_cheatsheet_images/blob/content/assets/kitty.jpg?raw=true" alt="Image of sitting striped kitten with hue-rotate filter applied" width="250px">
             </figure>
           </div><!--end of subsection-->
           <!--Section 2 - Filters - Subsection 9 - invert-->
@@ -293,6 +296,7 @@ Finding your way around
             <figure id="invert_img">
               <figcaption></figcaption>
               <!--example of invert filter on example image-->
+              <img src="https://github.com/MazontheMoon/css_cheatsheet_images/blob/content/assets/kitty.jpg?raw=true" alt="Image of sitting striped kitten with invert filter applied" width="250px">
             </figure>
           </div><!--end of subsection-->
           <!--Section 2 - Filters - Subsection 10 - saturate-->
@@ -313,6 +317,7 @@ Finding your way around
             <figure id="saturate_img">
               <figcaption></figcaption>
               <!--example of saturate filter on example image-->
+              <img src="https://github.com/MazontheMoon/css_cheatsheet_images/blob/content/assets/kitty.jpg?raw=true" alt="Image of sitting striped kitten with saturate filter applied" width="250px">
             </figure>
           </div><!--end of subsection-->
           <!--Section 2 - Filters - Subsection 11 - opacity-->
@@ -334,6 +339,7 @@ Finding your way around
             <figure id="opacity_img">
               <figcaption></figcaption>
               <!--example of opacity filter on example image-->
+              <img src="https://github.com/MazontheMoon/css_cheatsheet_images/blob/content/assets/kitty.jpg?raw=true" alt="Image of sitting striped kitten with opacity filter applied" width="250px">
             </figure>
           </div><!--end of subsection-->
           <!--Section 2 - Filters - Subsection 12 - sepia-->
@@ -354,6 +360,7 @@ Finding your way around
             <figure id="sepia_img">
               <figcaption></figcaption>
               <!--example of sepia filter on example image-->
+              <img src="https://github.com/MazontheMoon/css_cheatsheet_images/blob/content/assets/kitty.jpg?raw=true" alt="Image of sitting striped kitten with sepia filter applied" width="250px">
             </figure>
           </div><!--end of subsection-->
         </section>
@@ -369,61 +376,179 @@ Finding your way around
               <div class="code_box">
                 <code>
                   img {<br>
-                    clip-path: padding-box;<br>
+                    clip-path: function(value);<br>
                     }
                 </code>
               </div><!--end of code_box-->
               <ul class="sub_nav">
-              <li><a href="#">inset</a></li>
-              <li><a href="#">circle</a></li>
-              <li><a href="#">ellipse</a></li>
-              <li><a href="#">polygon</a></li>
-              <li><a href="#">path</a></li>  
-              <li><a href="#">and by &quot;boxes&quot;...</a></li>          
+              <li><a href="#sect_clip_inset">inset</a></li>
+              <li><a href="#sect_clip_circle">circle</a></li>
+              <li><a href="#sect_clip_ellipse">ellipse</a></li>
+              <li><a href="#sect_clip_polygon">polygon</a></li>
+              <li><a href="#sect_clip_path">path</a></li>  
+              <li><a href="#sect_clip_box">and by &quot;boxes&quot;...</a><li>          
             </ul>
           </div><!--end of text_box-->
         </div><!--end of subsection-->
         <!--Section 3 - Clipping - Subsection 2 - inset-->
-        <div id="sect_clip_inset" class="subsection_box"></div><!--end of subsection-->
+        <div id="sect_clip_inset" class="subsection_box">
+          <div class="text_box">
+            <div class="sub_header">
+              <h3>inset()</h3>
+            </div><!--end of subsection header-->
+            <div class="code_box">
+             <code>img {<br>
+              clip-path: inset(100px 50px);<br>
+              }
+             </code>
+            </div><!--end of code_box-->
+            <!--container for image example with applied filter-->
+            <figure id="inset_img">
+              <figcaption>Inset clip</figcaption>
+              <!--example of inset clip on example image-->
+              <img src="https://github.com/MazontheMoon/css_cheatsheet_images/blob/content/assets/kitty.jpg?raw=true" alt="Image of sitting striped kitten with inset clipping" width="250px">
+            </figure>
+          </div><!--end of text_box-->
+        </div><!--end of subsection-->
         <!--Section 3 - Clipping - Subsection 3 - circle-->
-        <div id="sect_clip_circle" class="subsection_box"></div><!--end of subsection-->
+        <div id="sect_clip_circle" class="subsection_box">
+          <div class="text_box">
+            <div class="sub_header">
+              <h3>circle()</h3>
+            </div><!--end of subsection header-->
+            <div class="code_box">
+             <code>img {<br>
+              clip-path: circle(50px at 0 100px);<br>
+              }
+             </code>
+            </div><!--end of code_box-->
+            <!--container for image example with applied filter-->
+            <figure id="circle_img">
+              <figcaption>Circle clip</figcaption>
+              <!--example of circle clip on example image-->
+              <img src="https://github.com/MazontheMoon/css_cheatsheet_images/blob/content/assets/kitty.jpg?raw=true" alt="Image of sitting striped kitten with circle clipping" width="250px">
+            </figure>
+          </div><!--end of text_box-->
+        </div><!--end of subsection-->
         <!--Section 3 - Clipping - Subsection 4 - ellipse-->
-        <div id="sect_clip_ellipse" class="subsection_box"></div><!--end of subsection-->
+        <div id="sect_clip_ellipse" class="subsection_box">
+          <div class="text_box">
+            <div class="sub_header">
+              <h3>ellipse()</h3>
+            </div><!--end of subsection header-->
+            <div class="code_box">
+             <code>img {<br>
+              clip-path: ellipse(50px 60px at 0 10% 20%);<br>
+              }
+             </code>
+            </div><!--end of code_box-->
+            <!--container for image example with applied filter-->
+            <figure id="ellipse_img">
+              <figcaption>Ellipse clip</figcaption>
+              <!--example of ellipse clip on example image-->
+              <img src="https://github.com/MazontheMoon/css_cheatsheet_images/blob/content/assets/kitty.jpg?raw=true" alt="Image of sitting striped kitten with ellipse clipping" width="250px">
+            </figure>
+          </div><!--end of text_box-->
+        </div><!--end of subsection-->
         <!--Section 3 - Clipping - Subsection 5 - polygon-->
-        <div id="sect_clip_polygon" class="subsection_box"></div><!--end of subsection-->
-        path        <div id="sect_clip_path" class="subsection_box"></div><!--end of subsection-->
-        <!--Section 3 - Clipping - Subsection 6 - path-->
-        <div id="sect_clip_path" class="subsection_box"></div><!--end of subsection-->
-        path        <div id="sect_clip_path" class="subsection_box"></div><!--end of subsection-->
+        <div id="sect_clip_polygon" class="subsection_box">
+          <div class="text_box">
+            <div class="sub_header">
+              <h3>polygon()</h3>
+            </div><!--end of subsection header-->
+            <div class="code_box">
+             <code>img {<br>
+              clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);<br>
+              }
+             </code>
+             <p>Use this <a href="https://bennettfeely.com/clippy/">clippy</a>tool</p>
+            </div><!--end of code_box-->
+            <!--container for image example with applied filter-->
+            <figure id="polygon_img">
+              <figcaption>Polygon clip</figcaption>
+              <!--example of polygon clip on example image-->
+              <img src="https://github.com/MazontheMoon/css_cheatsheet_images/blob/content/assets/kitty.jpg?raw=true" alt="Image of sitting striped kitten with polygon clipping" width="250px">
+            </figure>
+          </div><!--end of text_box-->
+        </div><!--end of subsection-->
+        <div id="sect_clip_path" class="subsection_box">
+          <div class="text_box">
+            <div class="sub_header">
+              <h3>path()</h3>
+            </div><!--end of subsection header-->
+            <div class="code_box">
+             <code>img {<br>
+              clip-path: path('M0.5,1 C0.5,1,0,0.7,0,0.3 A0.25,0.25,1,1,1,0.5,0.3 A0.25,0.25,1,1,1,1,0.3 C1,0.7,0.5,1,0.5,1 Z');<br>
+              }
+             </code>
+            </div><!--end of code_box-->
+            <!--container for image example with applied filter-->            
+            <figure id="path_img">
+              <figcaption>Path clip</figcaption>
+              <!--example of path clip on example image-->
+              <img src="https://github.com/MazontheMoon/css_cheatsheet_images/blob/content/assets/kitty.jpg?raw=true" alt="Image of sitting striped kitten with path clipping" width="250px">
+            </figure>
+          </div><!--end of text_box-->
+        </div><!--end of subsection-->
         <!--Section 3 - Clipping - Subsection 7 - clip boxes-->
         <div id="sect_clip_box" class="subsection_box">
           <div class="text_box">
             <div class="sub_header">
               <h3>Boxes...</h3>
-               <p>...</p>
+              <div class="code_box">
+                <code>
+                  img {<br>
+                    clip-path: padding-box;<br>
+                    }
+                </code>
+              </div><!--end of code_box-->
             </div><!--end of subsection header-->
             <!--containers for image example with clipping applied-->
           <figure id="margin_img">
-            <figcaption>...</figcaption>
+            <figcaption>Clipped to margin box</figcaption>
+            <!--example of margin box clip on image-->
+            <img src="https://github.com/MazontheMoon/css_cheatsheet_images/blob/content/assets/kitty.jpg?raw=true" alt="Image of sitting striped kitten with margin box clipping" width="250px">
           </figure>
           <figure id="border_img">
-            <figcaption>...</figcaption>
+            <figcaption>Clipped to border box</figcaption>
+            <!--example of border box clip on image-->
+            <img src="https://github.com/MazontheMoon/css_cheatsheet_images/blob/content/assets/kitty.jpg?raw=true" alt="Image of sitting striped kitten with border box clipping" width="250px">
           </figure>
           <figure id="padding_img">
-            <figcaption>...</figcaption>
+            <figcaption>Clipped to padding box</figcaption>
+            <!--example of padding box clip on image-->
+            <img src="https://github.com/MazontheMoon/css_cheatsheet_images/blob/content/assets/kitty.jpg?raw=true" alt="Image of sitting striped kitten with padding box clipping" width="250px">
           </figure>
           <figure id="content_img">
-            <figcaption>...</figcaption>
+            <figcaption>Clipped to content box</figcaption>
+            <!--example of content box clip on image-->
+            <img src="https://github.com/MazontheMoon/css_cheatsheet_images/blob/content/assets/kitty.jpg?raw=true" alt="Image of sitting striped kitten with content box clipping" width="250px">
           </figure>
           <figure id="fill_img">
-            <figcaption>...</figcaption>
+            <figcaption>Clipped to fill box</figcaption>
+            <!--example of fill box clip on image-->
+            <img src="https://github.com/MazontheMoon/css_cheatsheet_images/blob/content/assets/kitty.jpg?raw=true" alt="Image of sitting striped kitten with fill box clipping" width="250px">
           </figure>
           <figure id="stroke_img">
-            <figcaption>...</figcaption>
+            <figcaption>Clipped to stroke box</figcaption>
+            <!--example of stroke box clip on image-->
+            <img src="https://github.com/MazontheMoon/css_cheatsheet_images/blob/content/assets/kitty.jpg?raw=true" alt="Image of sitting striped kitten with stroke box clipping" width="250px">
           </figure>
           <figure id="view_img">
-            <figcaption>...</figcaption>
+            <figcaption>Clipped to view box</figcaption>
+            <!--example of view box clip on image-->
+            <img src="https://github.com/MazontheMoon/css_cheatsheet_images/blob/content/assets/kitty.jpg?raw=true" alt="Image of sitting striped kitten with view box clipping" width="250px">
           </figure>
+          <div class="text_box">
+            <p>There are combos too such as...</p>
+            <div class="code_box">
+              <code>
+                img {<br>
+                  clip-path: padding-box circle(50px at 0 100px);<br>
+                  }
+              </code>
+            </div> <!--end of code_box-->
+           </div><!--end of text_box-->
         </div> <!--end of subsection-->
         </section>
         <!--Section 4 - Best Practices-->
@@ -432,9 +557,27 @@ Finding your way around
             <h2>Tips and Tricks...</h2>
           </header>
           <div class="text_box">
+            <p>There can also be a situation where the image doesn't load and while there is always the alt text there is also a more stylish way of handling images with broken links</p>
            <div class="code_box">
-             <code></code>
+             <code>
+              img:after {<br>
+                <span class="code_box_comment">/*in case of image not found*/</span><br>
+                display: inherit;<br>
+                position: absolute;<br>
+                top: 0;<br>
+                left: 0;<br>
+                width: 100%;<br>
+                padding: 5px;<br>
+                border: 1px dashed slategrey;<br>
+                background-color: lightgrey;<br>
+                z-index: 1;<br>
+                font-family: verdana;<br>
+                font-size: 0.8em;<br>
+                content: "" attr(alt) " was not found";<br>
+                }
+             </code>
            </div> <!--end of code_box-->
+           <p>And don't forget about the <span class="code-word">inherit</span>, <span class="code-word">initial</span> and <span class="code-word">unset</span> values!</p>
           </div><!--end of text_box-->
         </section>      
       </main>
