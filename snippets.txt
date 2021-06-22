@@ -80,9 +80,10 @@ prefix:
  foo {
  display
  position
- background
  width
  height
+ background
  color
  text
+ animation
  }

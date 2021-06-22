@@ -5,9 +5,9 @@ Page variables
 
 :root {
     /*color scheme*/
-    --primary_colour: hsl(264, 71%, 28%); /*purple - fallback #3D157A*/
-    --dark_colour: hsl(210, 11%, 15%); /*darkgrey - fallback #212529*/ 
-    --light_colour: hsl(210, 17%, 98%); /*white - fallback #f8f9fa*/ 
+    --primary_col: hsl(264, 71%, 28%); /*purple - fallback #3D157A*/
+    --dark_col: hsl(210, 11%, 15%); /*darkgrey - fallback #212529*/ 
+    --light_col: hsl(210, 17%, 98%); /*white - fallback #f8f9fa*/ 
 
     /*fonts*/
     --header_font:'Limelight', 'Arial Black', cursive;
@@ -48,13 +48,39 @@ Page variables
   h6,
   p,
   a,
-  li {
+  li,
+  figcaption {
     font-family: Verdana, sans-serif;
   }
   
   /*================
   Page Layout 
   =================*/
+
+  /*box for all page elements*/
+  #container {
+    display: grid;
+  }
+
+  #container > header {
+    border: 5px solid;
+  }
+
+  main {
+    border: 5px solid;
+  }
+
+  main section {
+    border: 5px solid;
+  }
+
+  section .sect_header {
+    border: 5px solid;
+  }
+
+  section .text_box {
+    border: 5px solid;
+  }
   
   /*=====
   Header 
@@ -107,11 +133,18 @@ Page variables
   ===============*/
   
   @media (prefers-color-scheme: dark) {
+    body {
+      background-color: var(--dark-col, #212529);
+      color: var(--light-col, #f8f9fa);
+    }
    
   }
   
   @media (prefers-color-scheme: light) {
-  
+    body {
+      background-color: var(--light-col, #f8f9fa);
+      color: var(--dark-col, #212529);
+    }
   }
   
   
