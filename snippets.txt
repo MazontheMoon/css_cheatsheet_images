@@ -10,10 +10,12 @@ https://html.spec.whatwg.org/
 https://www.w3.org/WAI/test-evaluate/preliminary/
 https://validator.w3.org/
 https://jigsaw.w3.org/css-validator/
+https://validator.w3.org/checklink
 https://www.smashingmagazine.com/2021/05/useful-vs-code-extensions-web-developers/
 
 design:
 https://cssgradient.io/
+https://shadows.brumm.af/
 https://omatsuri.app/color-shades-generator
 https://www.smashingmagazine.com/2021/03/svg-generators/
 
@@ -60,9 +62,18 @@ hsl(264, 71%, 28%)
 rgb(61, 21, 122)
 
 
+currentColor
 var(--primary-col)
-var(--highlight-col)
-var(--text-col)
+var(--dark-col)
+var(--light-col)
+
+var(--header_font)
+var(--text_font)
+
+var(--wide_space)
+var(--middle_space)
+var(--narrow_space)
+
 
 Photo by <a href="https://unsplash.com/@e_d_g_a_r?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Edgar</a> on <a href="https://unsplash.com/s/photos/kitten?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
@@ -83,6 +94,7 @@ prefix:
  width
  height
  background
+ border
  color
  text
  animation

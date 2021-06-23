@@ -2,190 +2,183 @@
 Page variables
 ==============*/
 
-
 :root {
-    /*color scheme*/
-    --primary_col: hsl(264, 71%, 28%); /*purple - fallback #3D157A*/
-    --dark_col: hsl(210, 11%, 15%); /*darkgrey - fallback #212529*/ 
-    --light_col: hsl(210, 17%, 98%); /*white - fallback #f8f9fa*/ 
+  /*color scheme*/
+  --primary_col: hsl(264, 71%, 28%); /*purple - fallback #3D157A*/
+  --dark_col: hsl(210, 11%, 15%); /*darkgrey - fallback #212529*/
+  --light_col: hsl(210, 17%, 98%); /*white - fallback #f8f9fa*/
 
-    /*fonts*/
-    --header_font:'Limelight', 'Arial Black', cursive;
-    --text_font: 'Roboto', Verdana, sans-serif;
+  /*fonts*/
+  --header_font: "Limelight", "Arial Black", cursive;
+  --text_font: "Roboto", Verdana, sans-serif;
 
-  }
-  
-  
-  /*======================================
-  Back to Basics - reset browser defaults
-  =======================================*/
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-  }
-  
-  body * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  *,
-  *:before,
-  *:after {
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-  }
-  
-  /*reset default font - never shall Time New Roman be seen again!*/
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  a,
-  li,
-  figcaption {
-    font-family: Verdana, sans-serif;
-  }
-  
-  /*================
-  Page Layout 
-  =================*/
+  /*margins and paddings*/
+  --wide_space: 1rem;
+  --middle_space: 0.5rem;
+  --narrow_space: 0.25rem;
+}
 
-  /*box for all page elements*/
-  #container {
-    display: grid;
-  }
+/*======================================
+Back to Basics - reset browser defaults
+=======================================*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
 
-  #container > header {
-    border: 5px solid;
-  }
+body * {
+  margin: 0;
+  padding: 0;
+}
 
-  main {
-    border: 5px solid;
-  }
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
 
-  main section {
-    border: 5px solid;
-  }
+/*reset default font - never shall Time New Roman be seen again!*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+figcaption {
+  font-family: Verdana, sans-serif;
+}
 
-  section .sect_header {
-    border: 5px solid;
-  }
+/*================
+Page Layout 
+=================*/
 
-  section .text_box {
-    border: 5px solid;
-  }
-  
-  /*=====
-  Header 
-  =======*/
-  
-  /*=======
-  Nav Menu
-  =========*/
-  
-  /*==========================
-  Main and Section containers
-  ===========================*/
+/*single column layout for mobile first design then split to two column layout for larger screen sizes*/
+#container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
 
-  
+/*=====
+Header 
+=======*/
+#top {
+  grid-area: header;
+}
 
-  /*====
-  Footer
-  =======*/
-  
-  /*================
+/*=======
+Nav Menu
+=========*/
+nav {
+  grid-area: nav;
+}
+
+/*==========================
+Main and Section containers
+===========================*/
+main {
+  grid-area: main;
+}
+
+/*====
+Footer
+=======*/
+footer {
+  grid-are: footer;
+}
+
+/*================
   The little touches
   =================*/
-  
-  /*Back to top - only for small mobile screen views*/
-  .backtotop {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    font-size: 2rem;
-    padding: 0.4rem;
-  }
-  
-  /*
+
+/*Back to top - only for small mobile screen views*/
+.backtotop {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 2rem;
+  padding: 0.4rem;
+}
+
+/*
   .backtotop a {
     color: var(--light-colour, #9a8c98);
     text-shadow: 1px 1px 2px black;
   }
   */
-  
-  /*================
+
+/*================
   Responsivesnness
   ==================*/
-  /*
+/*
   @media only screen and (min-width: 1024px) {
   }
   */
-  
-  /*=============
+
+/*=============
   Accessibility
   ===============*/
-  
-  @media (prefers-color-scheme: dark) {
-    body {
-      background-color: var(--dark-col, #212529);
-      color: var(--light-col, #f8f9fa);
-    }
-   
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--dark-col, #212529);
+    color: var(--light-col, #f8f9fa);
   }
-  
-  @media (prefers-color-scheme: light) {
-    body {
-      background-color: var(--light-col, #f8f9fa);
-      color: var(--dark-col, #212529);
-    }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--light-col, #f8f9fa);
+    color: var(--dark-col, #212529);
   }
-  
-  
-  /*Reset to user browser preference*/
-  
-  @media (prefers-reduced-motion: reduce) {
-    body {
-      scroll-behavior: auto;
-    }
+}
+
+/*Reset to user browser preference*/
+
+@media (prefers-reduced-motion: reduce) {
+  body {
+    scroll-behavior: auto;
   }
-  
-  @media (prefers-reduced-motion: no-preference) {
-    /* animation styles go here */
-  }
-  
-  /*======================
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  /* animation styles go here */
+}
+
+/*======================
   Ye Olde Time Print View
   ========================*/
-  @media print {
-  
+@media print {
   /*remove unneeded elements*/
-  
+
   /*display footer links*/
-  
-    footer a:link {
-      color: #000;
-      margin: 0;
-      display: block;
-      font-size: 10pt;
-    }
-  
-    footer a::after {
-      content: " [" attr(href) "]";
-    }
-  
-    footer a:link,
-    footer a:visited {
-      color: #000;
-      background: none;
-      padding: 0;
-    }
+
+  footer a:link {
+    color: #000;
+    margin: 0;
+    display: block;
+    font-size: 10pt;
   }
-  
-  
+
+  footer a::after {
+    content: " [" attr(href) "]";
+  }
+
+  footer a:link,
+  footer a:visited {
+    color: #000;
+    background: none;
+    padding: 0;
+  }
+}
