@@ -16,6 +16,11 @@ Page variables
   --wide_space: 1rem;
   --middle_space: 0.5rem;
   --narrow_space: 0.25rem;
+
+  /*borders*/
+  --thick_line: 0.8rem;
+  --medium_line: 0.4rem;
+  --thin_line: 0.2rem;
 }
 
 /*======================================
@@ -75,6 +80,17 @@ Header
 =======*/
 #top {
   grid-area: header;
+  border: solid var(--thick_line) #000;
+  background-color: var(--primary_col);
+}
+
+#top h1 {
+  margin: var(--wide_space);
+  text-align: center;
+  font-family: var(--header_font);
+  /*enter clamp*/
+  font-size: 3rem;
+  text-shadow: 1px 1px 2px #000, -1px -1px 2px #000;
 }
 
 /*=======
@@ -84,6 +100,27 @@ nav {
   grid-area: nav;
 }
 
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  list-style: none;
+}
+
+nav ul li {
+  flex: 1;
+  margin: var(--wide_space);
+  padding: var(--middle_space);
+  border: solid var(--medium_line) var(--primary_col);
+}
+
+nav ul li a {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  color: currentColor;
+}
 /*==========================
 Main and Section containers
 ===========================*/
@@ -95,7 +132,7 @@ main {
 Footer
 =======*/
 footer {
-  grid-are: footer;
+  grid-area: footer;
 }
 
 /*================
@@ -107,7 +144,7 @@ footer {
   position: absolute;
   bottom: 0;
   right: 0;
-  font-size: 2rem;
+  font-size: 2rem; /*clamp*/
   padding: 0.4rem;
 }
 
