@@ -1,6 +1,10 @@
 # CSS Cheatsheet - Text
  One in a series of cheat sheets I have created to teach myself coding and frontend development - this lesson is for styling images. The notes I have created are based on the teachings of [FreeCodeCamp](https://www.freecodecamp.org/), [MDN Web Docs](https://developer.mozilla.org) and [W3Schools](https://www.w3schools.com/)
 
+## User Stories 
+As a student, I want to learn CSS, so that I can be a developer
+
+As a developer, I want a cheat sheet, so that I can easily see which functions or values I can use for styling
 
 ## Authors
 * **Mary Ronan** - [MazOnTheMoon](https://github.com/MazontheMoon)
