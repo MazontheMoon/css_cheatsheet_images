@@ -1,6 +1,6 @@
 Helping me...
-
 https://mazcodesonthemoon.wordpress.com/2020/10/12/teaching-myself-to-code-css/
+
 https://dev.w3.org/html5/html-author/charref
 https://google.github.io/styleguide/htmlcssguide.html
 https://www.w3.org/2009/cheatsheet/
@@ -74,6 +74,10 @@ var(--wide_space)
 var(--middle_space)
 var(--narrow_space)
 
+var(--thick_line)
+var(--medium_line)
+var(--thin_line)
+
 
 Photo by <a href="https://unsplash.com/@e_d_g_a_r?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Edgar</a> on <a href="https://unsplash.com/s/photos/kitten?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
@@ -95,6 +99,8 @@ prefix:
  height
  background
  border
+ margin
+ padding
  color
  text
  animation
