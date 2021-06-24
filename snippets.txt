@@ -21,6 +21,8 @@ https://www.smashingmagazine.com/2021/03/svg-generators/
 
 https://favicon.io/emoji-favicons
 
+As a ..., I want to ..., so that...
+
 
 <span class="really-look-at-me-text"></span> - Bold & Italic
 
