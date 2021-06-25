@@ -87,9 +87,9 @@ Header
 #top h1 {
   margin: var(--wide_space);
   text-align: center;
+  color: var(--light_col);
   font-family: var(--header_font);
-  /*enter clamp*/
-  font-size: 3rem;
+  font-size: clamp(1.6rem, 3rem, 4.4rem);
   text-shadow: 1px 1px 2px #000, -1px -1px 2px #000;
 }
 
@@ -110,16 +110,26 @@ nav ul {
 nav ul li {
   flex: 1;
   margin: var(--wide_space);
-  padding: var(--middle_space);
   border: solid var(--medium_line) var(--primary_col);
+  box-shadow: 1px 1px 2px #000, -1px -1px 2px #000;
 }
 
 nav ul li a {
   display: inline-block;
   width: 100%;
+  padding: var(--middle_space);
   text-decoration: none;
   text-align: center;
+  font-size: font-size: clamp(0.8rem, 1.6rem, 2.5rem);
+  font-weight: bold;
+  letter-spacing: 2px;
   color: currentColor;
+  box-shadow: 1px 1px 2px #000, -1px -1px 2px #000;
+}
+
+nav ul li a:hover {
+  background-color: var(--primary_col);
+  box-shadow: none;
 }
 /*==========================
 Main and Section containers
