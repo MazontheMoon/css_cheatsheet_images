@@ -90,6 +90,7 @@ Header
   color: var(--light_col);
   font-family: var(--header_font);
   font-size: clamp(1.6rem, 3rem, 4.4rem);
+  line-height: 1.5;
   text-shadow: 1px 1px 2px #000, -1px -1px 2px #000;
 }
 
@@ -117,10 +118,10 @@ nav ul li {
 nav ul li a {
   display: inline-block;
   width: 100%;
-  padding: var(--middle_space);
+  padding: var(--middle_space) calc(2*var(--middle_space));
   text-decoration: none;
   text-align: center;
-  font-size: font-size: clamp(0.8rem, 1.6rem, 2.5rem);
+  font-size: clamp(0.8rem, 1.6rem, 2.5rem);
   font-weight: bold;
   letter-spacing: 2px;
   color: currentColor;
@@ -136,6 +137,8 @@ Main and Section containers
 ===========================*/
 main {
   grid-area: main;
+  width: 95%;
+  margin: 0 auto;
 }
 
 /*====
