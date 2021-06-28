@@ -18,6 +18,7 @@ https://cssgradient.io/
 https://shadows.brumm.af/
 https://omatsuri.app/color-shades-generator
 https://www.smashingmagazine.com/2021/03/svg-generators/
+http://jashgopani.me/colorinator/
 
 https://favicon.io/emoji-favicons
 
@@ -65,9 +66,9 @@ rgb(61, 21, 122)
 
 
 currentColor
-var(--primary-col)
-var(--dark-col)
-var(--light-col)
+var(--primary_col)
+var(--dark_col)
+var(--light_col)
 
 var(--header_font)
 var(--text_font)
