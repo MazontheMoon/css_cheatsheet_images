@@ -118,7 +118,7 @@ nav ul li {
 nav ul li a {
   display: inline-block;
   width: 100%;
-  padding: var(--middle_space) calc(2 * var(--middle_space));
+  padding: var(--middle_space);
   text-decoration: none;
   text-align: center;
   font-size: clamp(0.8rem, 1.6rem, 2.5rem);
@@ -137,12 +137,10 @@ Main and Section containers
 ===========================*/
 main {
   grid-area: main;
-  width: 95%;
-  margin: 0 auto;
 }
 
 section {
-  padding: var(--wide_space);
+  margin-bottom: var(--middle_space);
 }
 
 section header {
@@ -155,247 +153,14 @@ section header h2 {
   box-shadow: 1px 1px 2px #000, -1px -1px 2px #000;
   background-color: #000;
   color: #fff;
-}
-/*====
-Footer
-=======*/
-footer {
-  grid-area: footer;
-}
-
-/*================
-  The little touches
-  =================*/
-
-/*Back to top - only for small mobile screen views*/
-.backtotop {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  font-size: 2rem; /*clamp*/
-  padding: 0.4rem;
-}
-
-/*
-  .backtotop a {
-    color: var(--light-colour, #9a8c98);
-    text-shadow: 1px 1px 2px black;
-  }
-  */
-
-/*================
-  Responsivesnness
-  ==================*/
-/*
-  @media only screen and (min-width: 1024px) {
-  }
-  */
-
-/*=============
-  Accessibility
-  ===============*/
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: var(--dark-col, #212529);
-    color: var(--light-col, #f8f9fa);
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: var(--light-col, #f8f9fa);
-    color: var(--dark-col, #212529);
-  }
-}
-
-/*Reset to user browser preference*/
-
-@media (prefers-reduced-motion: reduce) {
-  body {
-    scroll-behavior: auto;
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  /* animation styles go here */
-}
-
-/*======================
-  Ye Olde Time Print View
-  ========================*/
-@media print {
-  /*remove unneeded elements*/
-
-  /*display footer links*/
-
-  footer a:link {
-    color: #000;
-    margin: 0;
-    display: block;
-    font-size: 10pt;
-  }
-
-  footer a::after {
-    content: " [" attr(href) "]";
-  }
-
-  footer a:link,
-  footer a:visited {
-    color: #000;
-    background: none;
-    padding: 0;
-  }
-}
-/*============
-Page variables
-==============*/
-
-:root {
-  /*color scheme*/
-  --primary_col: hsl(264, 71%, 28%); /*purple - fallback #3D157A*/
-  --dark_col: hsl(210, 11%, 15%); /*darkgrey - fallback #212529*/
-  --light_col: hsl(210, 17%, 98%); /*white - fallback #f8f9fa*/
-
-  /*fonts*/
-  --header_font: "Limelight", "Arial Black", cursive;
-  --text_font: "Roboto", Verdana, sans-serif;
-
-  /*margins and paddings*/
-  --wide_space: 1rem;
-  --middle_space: 0.5rem;
-  --narrow_space: 0.25rem;
-
-  /*borders*/
-  --thick_line: 0.8rem;
-  --medium_line: 0.4rem;
-  --thin_line: 0.2rem;
-}
-
-/*======================================
-Back to Basics - reset browser defaults
-=======================================*/
-html,
-body {
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-  font-size: 16px;
-}
-
-body * {
-  margin: 0;
-  padding: 0;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-}
-
-/*reset default font - never shall Time New Roman be seen again!*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a,
-li,
-figcaption {
-  font-family: Verdana, sans-serif;
-}
-
-/*================
-Page Layout 
-=================*/
-
-/*single column layout for mobile first design then split to two column layout for larger screen sizes*/
-#container {
-  display: grid;
-  grid-template-areas:
-    "header"
-    "nav"
-    "main"
-    "footer";
-}
-
-/*=====
-Header 
-=======*/
-#top {
-  grid-area: header;
-  border: solid var(--thick_line) #000;
-  background-color: var(--primary_col);
-}
-
-#top h1 {
-  margin: var(--wide_space);
-  text-align: center;
-  color: var(--light_col);
   font-family: var(--header_font);
-  font-size: clamp(1.6rem, 3rem, 4.4rem);
-  line-height: 1.5;
-  text-shadow: 1px 1px 2px #000, -1px -1px 2px #000;
-}
-
-/*=======
-Nav Menu
-=========*/
-nav {
-  grid-area: nav;
-}
-
-nav ul {
-  display: flex;
-  justify-content: space-evenly;
-  flex-flow: row wrap;
-  list-style: none;
-}
-
-nav ul li {
-  flex: 1;
-  margin: var(--wide_space);
-  border: solid var(--medium_line) var(--primary_col);
-  box-shadow: 1px 1px 2px #000, -1px -1px 2px #000;
-}
-
-nav ul li a {
-  display: inline-block;
-  width: 100%;
-  padding: var(--middle_space) calc(2 * var(--middle_space));
-  text-decoration: none;
-  text-align: center;
-  font-size: clamp(0.8rem, 1.6rem, 2.5rem);
-  font-weight: bold;
+  font-size: clamp(1.2rem, 2rem, 2.8rem);
+  line-height: 1.25;
   letter-spacing: 2px;
-  color: currentColor;
-  box-shadow: 1px 1px 2px #000, -1px -1px 2px #000;
 }
 
-nav ul li a:hover {
-  background-color: var(--primary_col);
-  box-shadow: none;
-}
-/*==========================
-Main and Section containers
-===========================*/
-main {
-  grid-area: main;
-  width: 95%;
-  margin: 0 auto;
-}
-
-section {
-  padding: var(--wide_space);
-}
-
-section header {
-  border: var(--thick_line) solid var(--primary-col);
+section div {
+  margin: 0 var(--wide_space);
 }
 /*====
 Footer
