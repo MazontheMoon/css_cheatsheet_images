@@ -148,7 +148,7 @@ section header {
 }
 
 section header h2 {
-  padding: var(--middle_space);
+  padding: var(--middle_space) var(--wide_space);
   border: var(--medium_line) solid var(--primary_col);
   box-shadow: 1px 1px 2px #000, -1px -1px 2px #000;
   background-color: #000;
@@ -161,6 +161,11 @@ section header h2 {
 
 section div {
   margin: 0 var(--wide_space);
+}
+
+section p {
+  line-height: 1.5;
+  padding-bottom: var(--narrow_space);
 }
 /*====
 Footer
