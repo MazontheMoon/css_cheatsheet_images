@@ -163,9 +163,15 @@ section div {
   margin: 0 var(--wide_space);
 }
 
+section .text_box {
+  border-left: var(--medium_line) double var(--primary_col);
+  padding: 0 var(--middle_space);
+}
+
 section p {
-  line-height: 1.5;
   padding-bottom: var(--narrow_space);
+  font-family: var(--text_font);
+  line-height: 1.5;
 }
 /*====
 Footer
