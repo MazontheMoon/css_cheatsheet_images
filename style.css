@@ -110,7 +110,7 @@ nav ul {
 
 nav ul li {
   flex: 1;
-  margin: var(--wide_space);
+  margin: var(--narrow_space); var(--wide_space);
   border: solid var(--medium_line) var(--primary_col);
   box-shadow: 1px 1px 2px #000, -1px -1px 2px #000;
 }
@@ -137,6 +137,7 @@ Main and Section containers
 ===========================*/
 main {
   grid-area: main;
+  min-width: 100%;
 }
 
 section {
@@ -172,6 +173,22 @@ section p {
   padding-bottom: var(--narrow_space);
   font-family: var(--text_font);
   line-height: 1.5;
+}
+
+/*secondary nav menu showing image gallery with different filters applied*/
+#gallery ul {
+display: grid;
+grid-template-columns: repeat(auto-fit, 160px);
+grid-template-rows: repeat(auto-fit, auto);
+grid-auto-flow: row;
+margin: var(--middle_space);
+border: solid 5px white;
+}
+
+#gallery li {
+  justify-self: center;
+  align-self: center;
+  list-style: none;
 }
 /*====
 Footer
