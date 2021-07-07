@@ -110,7 +110,7 @@ nav ul {
 
 nav ul li {
   flex: 1;
-  margin: var(--narrow_space); var(--wide_space);
+  margin: var(--narrow_space) var(--wide_space);
   border: solid var(--medium_line) var(--primary_col);
   box-shadow: 1px 1px 2px #000, -1px -1px 2px #000;
 }
@@ -177,19 +177,22 @@ section p {
 
 /*secondary nav menu showing image gallery with different filters applied*/
 #gallery ul {
-display: grid;
-grid-template-columns: repeat(auto-fit, 160px);
-grid-template-rows: repeat(auto-fit, auto);
-grid-auto-flow: row;
+display: flex;
+flex-flow: row wrap;
+justify-content: space-evenly;
+align-items: center;
+align-content: space-evenly;
 margin: var(--middle_space);
-border: solid 5px white;
 }
 
 #gallery li {
-  justify-self: center;
-  align-self: center;
   list-style: none;
 }
+
+#gallery li a img {
+  border: var(--thin_line) solid #000;
+}
+
 /*====
 Footer
 =======*/
