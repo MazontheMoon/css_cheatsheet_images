@@ -121,6 +121,7 @@ nav ul li a {
   padding: var(--middle_space);
   text-decoration: none;
   text-align: center;
+  font-family: var(--header_font);
   font-size: clamp(0.8rem, 1.6rem, 2.5rem);
   font-weight: bold;
   letter-spacing: 2px;
@@ -156,7 +157,7 @@ section header h2 {
   color: #fff;
   font-family: var(--header_font);
   font-size: clamp(1.2rem, 2rem, 2.8rem);
-  line-height: 1.25;
+  line-height: 1.5;
   letter-spacing: 2px;
 }
 
@@ -164,17 +165,27 @@ section div {
   margin: 0 var(--wide_space);
 }
 
+section p {
+  padding-bottom: var(--narrow_space);
+  font-family: var(--text_font);
+  font-size: clamp(0.8rem, 1.2rem, 1.6rem);
+  line-height: 1.5;
+}
+
 section .text_box {
   border-left: var(--medium_line) double var(--primary_col);
   padding: 0 var(--middle_space);
 }
 
-section p {
-  padding-bottom: var(--narrow_space);
-  font-family: var(--text_font);
-  line-height: 1.5;
+section .code_box {
+  margin: var(--wide_space);
+  padding: var(--wide_space);
+  border-left: var(--medium_line) solid var(--primary_col);
+  background-color: #000;
+  box-shadow: 2px 2px 2px var(--primary_col);
+  font-size: clamp(1rem, 1.4rem, 1.8rem);
+  word-wrap:break-word;
 }
-
 /*secondary nav menu showing image gallery with different filters applied*/
 #gallery ul {
 display: flex;
@@ -182,7 +193,6 @@ flex-flow: row wrap;
 justify-content: space-evenly;
 align-items: center;
 align-content: space-evenly;
-margin: var(--middle_space);
 }
 
 #gallery li {
