@@ -172,16 +172,12 @@ section p {
   line-height: 1.5;
 }
 
-section .text_box {
-  border-left: var(--medium_line) double var(--primary_col);
-  padding: 0 var(--middle_space);
-}
-
 section .code_box {
   margin: var(--wide_space);
   padding: var(--wide_space);
   border-left: var(--medium_line) solid var(--primary_col);
   background-color: #000;
+  color: #fff;
   box-shadow: 2px 2px 2px var(--primary_col);
   font-size: clamp(1rem, 1.4rem, 1.8rem);
   word-wrap:break-word;
