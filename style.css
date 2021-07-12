@@ -207,6 +207,11 @@ section p {
 
 }
 /*secondary nav menu showing image gallery with different filters applied*/
+
+#gallery {
+  margin: var(--wide_space) var(--middle_space);
+}
+
 #gallery ul {
 display: flex;
 flex-flow: row wrap;
@@ -223,6 +228,32 @@ align-content: space-evenly;
   border: var(--thin_line) solid #000;
 }
 
+/*secondary nav menu of text links*/
+.sub_nav {
+margin: 0 var(--middle_space);
+}
+
+.sub_nav li{
+margin: var(--middle_space);
+border-left: var(--medium_line) solid var(--primary_col);
+list-style: none;
+}
+
+.sub_nav li:hover {
+  background-color: var(--primary_col);
+  border-left: var(--medium_line) solid #000;
+}
+
+.sub_nav li a{
+ display: inline-block;
+  width: 100%;
+  padding: var(--middle_space);
+  text-decoration: none;
+  font-family: var(--text_font);
+  font-size: clamp(0.8rem, 1.4rem, 1.8rem);
+  color: currentColor;
+  
+}
 /*====
 Footer
 =======*/
