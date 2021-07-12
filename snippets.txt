@@ -14,6 +14,7 @@ https://validator.w3.org/checklink
 https://www.smashingmagazine.com/2021/05/useful-vs-code-extensions-web-developers/
 https://responsibleweb.app
 https://whatwg.org/
+https://tiny-helpers.dev
 
 My Design Hat:
 
@@ -24,7 +25,7 @@ https://omatsuri.app/color-shades-generator
 https://www.smashingmagazine.com/2021/03/svg-generators/
 http://jashgopani.me/colorinator/
 https://www.imagemaps.net
-
+https://realfavicongenerator.net
 https://favicon.io/emoji-favicons
 
 As a ..., I want to ..., so that...
@@ -47,8 +48,8 @@ font-family: 'Limelight', cursive;
 font...
 font-family: 'Roboto', sans-serif;
 
-var(--font)
-var(--header-font)
+var(--text_font)
+var(--header_font)
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
