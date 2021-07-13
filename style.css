@@ -187,11 +187,11 @@ section p {
   color: #fff;
   box-shadow: 2px 2px 2px var(--primary_col);
   font-size: clamp(1rem, 1.4rem, 1.8rem);
-  word-wrap:break-word;
+  word-wrap: break-word;
 }
 
 .sub_header {
-  margin: var(--middle_space) 0; 
+  margin: var(--middle_space) 0;
 }
 
 .sub_header h3 {
@@ -204,7 +204,6 @@ section p {
   font-size: clamp(1.2rem, 1.6rem, 1.8rem);
   line-height: 1.5;
   letter-spacing: 2px;
-
 }
 
 /*secondary nav menu with image gallery*/
@@ -213,11 +212,11 @@ section p {
 }
 
 #gallery ul {
-display: flex;
-flex-flow: row wrap;
-justify-content: space-evenly;
-align-items: center;
-align-content: space-evenly;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-evenly;
 }
 
 #gallery li {
@@ -230,22 +229,23 @@ align-content: space-evenly;
 
 /*secondary nav menu of text links*/
 .sub_nav {
-margin: 0 var(--middle_space);
+  margin: 0 var(--middle_space);
 }
 
-.sub_nav li{
-margin: var(--middle_space);
-border-left: var(--medium_line) solid var(--primary_col);
-list-style: none;
+.sub_nav li {
+  margin: var(--middle_space);
+  border-left: var(--medium_line) solid var(--primary_col);
+  list-style: none;
 }
 
 .sub_nav li:hover {
-  background-color: var(--primary_col);
   border-left: var(--medium_line) solid #000;
+  background-color: var(--primary_col);
+  color: #fff;
 }
 
-.sub_nav li a{
- display: inline-block;
+.sub_nav li a {
+  display: inline-block;
   width: 100%;
   padding: var(--middle_space);
   text-decoration: none;
@@ -263,26 +263,50 @@ figure {
 
 figure figcaption {
   font-size: clamp(0.8rem, 1rem, 1.2rem);
-  
 }
 
 figure img {
   align-self: center;
   margin: var(--middle_space);
   border: var(--thin_line) solid #000;
-  box-shadow: 0 0 5px #000,
-  1px 1px 10px var(--primary_col) ;
-
+  box-shadow: 0 0 5px #000, 1px 1px 10px var(--primary_col);
 }
-
 
 /*====
 Footer
 =======*/
 footer {
   grid-area: footer;
+  border: var(--thin_line) solid #000;
+  background-color: var(--primary_col);
+  color: #fff;
+}
+footer #about {
+  padding: var(--middle_space);
+}
+footer #about ul {
+  list-style: none;
 }
 
+footer #about ul li {
+  margin: var(--middle_space);
+  padding-left: var(--middle_space);
+  border-left: var(--thin_line) solid #fff;
+}
+
+footer #about ul li a{
+  color: inherit;
+  text-decoration: none;
+}
+
+footer #about ul li:hover a{
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+  footer #made_by_me {
+  background-color: #000;
+}
 /*================
   The little touches
   =================*/
