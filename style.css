@@ -206,8 +206,8 @@ section p {
   letter-spacing: 2px;
 
 }
-/*secondary nav menu showing image gallery with different filters applied*/
 
+/*secondary nav menu with image gallery*/
 #gallery {
   margin: var(--wide_space) var(--middle_space);
 }
@@ -252,8 +252,30 @@ list-style: none;
   font-family: var(--text_font);
   font-size: clamp(0.8rem, 1.4rem, 1.8rem);
   color: currentColor;
+}
+
+/*figures and captions for image examples*/
+figure {
+  display: flex;
+  flex-direction: column;
+  padding: var(--wide_space);
+}
+
+figure figcaption {
+  font-size: clamp(0.8rem, 1rem, 1.2rem);
   
 }
+
+figure img {
+  align-self: center;
+  margin: var(--middle_space);
+  border: var(--thin_line) solid #000;
+  box-shadow: 0 0 5px #000,
+  1px 1px 10px var(--primary_col) ;
+
+}
+
+
 /*====
 Footer
 =======*/
