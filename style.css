@@ -82,6 +82,8 @@ Header
   grid-area: header;
   border: solid var(--thick_line) #000;
   background-color: var(--primary_col);
+  background-image: radial-gradient(hsl(264, 71%, 28%),
+   hsl(264, 82%, 57%), hsl(264, 71%, 28%));
 }
 
 #top h1 {
@@ -284,12 +286,16 @@ footer {
 footer #about {
   padding: var(--middle_space);
 }
+
+footer #about p {
+  margin: var(--middle_space) 0;
+}
 footer #about ul {
   list-style: none;
 }
 
 footer #about ul li {
-  margin: var(--middle_space);
+  margin: var(--wide_space);
   padding-left: var(--middle_space);
   border-left: var(--thin_line) solid #fff;
 }
@@ -306,6 +312,28 @@ footer #about ul li:hover a{
 
   footer #made_by_me {
   background-color: #000;
+  text-align: center;
+}
+
+footer #made_by_me ul {
+  display: flex;
+  flex-flow: row nowwrap;
+  justify-content: center;
+  list-style: none;
+}
+
+footer #made_by_me ul li {
+  margin: var(--middle_space);
+}
+
+footer #made_by_me ul li a {
+  color: inherit;
+}
+
+footer #made_by_me ul li a:hover,
+footer #made_by_me ul li a:focus,
+footer #made_by_me ul li a:active {
+  color: var(--primary_col);
 }
 /*================
   The little touches
