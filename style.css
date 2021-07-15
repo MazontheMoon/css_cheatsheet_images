@@ -175,6 +175,11 @@ section p {
   line-height: 1.5;
 }
 
+/*position for back-to-top shortcut*/
+section, section .subsection_box {
+  position: relative;
+}
+
 .text_box p {
   border-left: var(--medium_line) double var(--primary_col);
   padding: var(--middle_space);
@@ -188,7 +193,7 @@ section p {
   background-color: #000;
   color: #fff;
   box-shadow: 2px 2px 2px var(--primary_col);
-  font-size: clamp(1rem, 1.4rem, 1.8rem);
+  font-size: clamp(1rem, 1.2em, 1.4rem);
   word-wrap: break-word;
 }
 
@@ -286,6 +291,7 @@ Footer
 footer {
   grid-area: footer;
   border: var(--thin_line) solid #000;
+  border-top: var(--thick_line) solid #000;
   background-color: var(--primary_col);
   color: #fff;
 }
@@ -347,21 +353,20 @@ footer #made_by_me ul li a:active {
   The little touches
   =================*/
 
-/*Back to top - only for small mobile screen views*/
+/*Back to top*/
 .backtotop {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  font-size: 2rem; /*clamp*/
-  padding: 0.4rem;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 1.2rem;
 }
 
-/*
-  .backtotop a {
-    color: var(--light-colour, #9a8c98);
-    text-shadow: 1px 1px 2px black;
-  }
-  */
+.backtotop a:link,
+.backtotop a:hover,
+.backtotop a:active,
+.backtotop a:visited {
+  color: var(--body-col);
+}
 
 /*================
   Responsivesnness
