@@ -237,6 +237,7 @@ section .subsection_box {
 
 #gallery li {
   list-style: none;
+  margin: var(--narrow_space);
 }
 
 #gallery li a {
@@ -304,22 +305,49 @@ Filter Image Examples
 }
 
 /*brightness*/
+#brightness_img img, #gallery li a[href*="brightness"] img {
+  filter: brightness(0.5);
+}
 
 /*contrast*/
+#contrast_img img, #gallery li a[href*="contrast"] img {
+  filter: contrast(200%);
+}
 
 /*drop-shadow*/
+#shadow_img img, #gallery li a[href*="shadow"] img {
+  filter: drop-shadow(5px 5px 20px white);
+}
 
 /*grayscale*/
+#grayscale_img img, #gallery li a[href*="grayscale"] img {
+  filter: grayscale(100%);
+}
 
 /*hue-rotate*/
+#hue_img img, #gallery li a[href*="hue"] img {
+  filter: hue-rotate(90deg);
+}
 
 /*invert*/
+#invert_img img, #gallery li a[href*="invert"] img {
+  filter: invert(75%);
+}
 
 /*saturate*/
+#saturate_img img, #gallery li a[href*="saturate"] img {
+  filter: saturate(200%);
+}
 
 /*opacity*/
+#opacity_img img, #gallery li a[href*="opacity"] img {
+  filter: opacity(25%);
+}
 
 /*sepia*/
+#sepia_img img, #gallery li a[href*="sepia"] img {
+  filter: sepia(65%);
+}
 
 /*=====================
 Clipped Image Examples
