@@ -541,7 +541,7 @@ Finding your way around
             <!--end of subsection header-->
             <div class="code_box">
               <code>img {<br>
-                clip-path: circle(50px at 0 100px);<br>
+                clip-path: circle(50px at 100px 100px);<br>
                 }
               </code>
             </div>
@@ -569,7 +569,7 @@ Finding your way around
             <!--end of subsection header-->
             <div class="code_box">
               <code>img {<br>
-                clip-path: ellipse(50px 60px at 0 10% 20%);<br>
+                clip-path: ellipse(50px 60px at 10% 20%);<br>
                 }
               </code>
             </div>
@@ -600,7 +600,7 @@ Finding your way around
                 clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);<br>
                 }
               </code>
-              <p>Use this <a href="https://bennettfeely.com/clippy/">clippy</a>tool</p>
+              <p>Use this <a href="https://bennettfeely.com/clippy/" target="_blank">clippy</a> tool</p>
             </div>
             <!--end of code_box-->
             <!--container for image example with applied filter-->
@@ -625,6 +625,7 @@ Finding your way around
             <!--end of subsection header-->
             <div class="code_box">
               <code>img {<br>
+                <span class="code_box_comment">/*uses svg*/</span><br>
                 clip-path: path('M0.5,1 C0.5,1,0,0.7,0,0.3 A0.25,0.25,1,1,1,0.5,0.3 A0.25,0.25,1,1,1,1,0.3 C1,0.7,0.5,1,0.5,1 Z');<br>
                 }
               </code>
