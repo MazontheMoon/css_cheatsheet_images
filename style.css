@@ -381,19 +381,46 @@ Clipped Image Examples
 #path_img img {
   clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 }
+
+#sect_clip_box figure img {
+  margin: var(--middle_space);
+  padding: var(--middle_space);
+  border: var(--middle_space) solid #000;
+}
 /*margin-box*/
+#margin_img img {
+  clip-path: margin-box;
+}
 
 /*border-box*/
+#border_img img {
+  clip-path: border-box;
+}
 
 /*padding-box*/
+#padding_img img {
+  clip-path: padding-box;
+}
 
 /*content-box*/
+#content_img img {
+  clip-path: content-box;
+}
 
 /*fill-box*/
+#fill_img img {
+  clip-path: fill-box;
+}
 
 /*stroke-box*/
+#stroke_img img {
+  clip-path: stroke-box;
+}
 
 /*view-box*/
+#view_img img {
+  clip-path: view-box;
+}
 
 /*====
 Footer
