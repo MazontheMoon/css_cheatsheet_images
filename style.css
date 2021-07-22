@@ -354,6 +354,13 @@ Clipped Image Examples
 ======================*/
 
 #sect_clipping figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 450px;
+  margin: var(--narrow_space) auto;
+  background-color: var(--primary_col);
   border: var(--thin_line) solid #000;
 }
 
@@ -493,8 +500,8 @@ footer #made_by_me ul li a:active {
 /*Back to top*/
 .backtotop {
   position: absolute;
-  bottom: 1rem;
-  right: 1rem;
+  bottom: 0;
+  right: 0;
   font-size: 1.2rem;
 }
 
