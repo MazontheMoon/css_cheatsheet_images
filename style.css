@@ -244,7 +244,7 @@ section .subsection_box {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color:  #000;
+  background-color: #000;
   border: var(--thin_line) solid #000;
 }
 
@@ -300,52 +300,62 @@ Filter Image Examples
 ====================*/
 
 /*blur*/
-#blur_img img, #gallery li a[href*="blur"] img {
+#blur_img img,
+#gallery li a[href*="blur"] img {
   filter: blur(5px);
 }
 
 /*brightness*/
-#brightness_img img, #gallery li a[href*="brightness"] img {
+#brightness_img img,
+#gallery li a[href*="brightness"] img {
   filter: brightness(0.5);
 }
 
 /*contrast*/
-#contrast_img img, #gallery li a[href*="contrast"] img {
+#contrast_img img,
+#gallery li a[href*="contrast"] img {
   filter: contrast(200%);
 }
 
 /*drop-shadow*/
-#shadow_img img, #gallery li a[href*="shadow"] img {
+#shadow_img img,
+#gallery li a[href*="shadow"] img {
   filter: drop-shadow(5px 5px 20px white);
 }
 
 /*grayscale*/
-#grayscale_img img, #gallery li a[href*="grayscale"] img {
+#grayscale_img img,
+#gallery li a[href*="grayscale"] img {
   filter: grayscale(100%);
 }
 
 /*hue-rotate*/
-#hue_img img, #gallery li a[href*="hue"] img {
+#hue_img img,
+#gallery li a[href*="hue"] img {
   filter: hue-rotate(90deg);
 }
 
 /*invert*/
-#invert_img img, #gallery li a[href*="invert"] img {
+#invert_img img,
+#gallery li a[href*="invert"] img {
   filter: invert(75%);
 }
 
 /*saturate*/
-#saturate_img img, #gallery li a[href*="saturate"] img {
+#saturate_img img,
+#gallery li a[href*="saturate"] img {
   filter: saturate(200%);
 }
 
 /*opacity*/
-#opacity_img img, #gallery li a[href*="opacity"] img {
+#opacity_img img,
+#gallery li a[href*="opacity"] img {
   filter: opacity(25%);
 }
 
 /*sepia*/
-#sepia_img img, #gallery li a[href*="sepia"] img {
+#sepia_img img,
+#gallery li a[href*="sepia"] img {
   filter: sepia(65%);
 }
 
@@ -386,7 +396,18 @@ Clipped Image Examples
 
 /*path*/
 #path_img img {
-  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
 }
 
 #sect_clip_box figure img {
@@ -515,10 +536,24 @@ footer #made_by_me ul li a:active {
 /*================
   Responsivesnness
   ==================*/
-/*
-  @media only screen and (min-width: 1024px) {
+
+@media only screen and (min-width: 1024px) {
+  footer {
+    display: flex;
+    flex-flow: row nowrap;
   }
-  */
+
+  footer #about {
+    flex: 2;
+  }
+
+  footer #made_by_me {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 /*=============
   Accessibility
