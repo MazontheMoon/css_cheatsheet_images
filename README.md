@@ -51,8 +51,8 @@ Examples:
 
 ## Versioning
 
-Version 1.1 - Initial content
-Version 1.2 - Styling
+* Version 1.1 - Initial content
+* Version 1.2 - Styling
 
 ## Acknowledgments
 We would like to offer our appreciation to Spotify and the *This is Celestial Aeon Project* playlist for providing the suitable accompaniment for this project
