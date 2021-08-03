@@ -581,15 +581,25 @@ footer #made_by_me ul li a:active {
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  /* animation styles go here */
-}
-
 /*======================
   Ye Olde Time Print View
   ========================*/
 @media print {
   /*remove unneeded elements*/
+  nav, #gallery, .backtotop {
+    display: none;
+  }
+
+  body {
+    background-color: initial;
+    color: #000;
+  }
+
+  section * {
+    box-shadow: none;
+    text-shadow: none;
+  }
+
 
   /*display footer links*/
 
