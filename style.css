@@ -533,6 +533,25 @@ footer #made_by_me ul li a:active {
   color: var(--body-col);
 }
 
+/*in case of image not found*/
+img {
+  position: relative;
+}
+img:after {
+  display: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+  border: 1px dashed slategrey;
+  background-color: lightgrey;
+  z-index: 1;
+  font-family: verdana;
+  font-size: 0.8rem;
+  content: "" attr(alt) " was not found";
+}
+
 /*================
   Responsivesnness
   ==================*/
@@ -586,7 +605,9 @@ footer #made_by_me ul li a:active {
   ========================*/
 @media print {
   /*remove unneeded elements*/
-  nav, #gallery, .backtotop {
+  nav,
+  #gallery,
+  .backtotop {
     display: none;
   }
 
@@ -599,7 +620,6 @@ footer #made_by_me ul li a:active {
     box-shadow: none;
     text-shadow: none;
   }
-
 
   /*display footer links*/
 
