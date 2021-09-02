@@ -15,6 +15,7 @@ https://www.smashingmagazine.com/2021/05/useful-vs-code-extensions-web-developer
 https://responsibleweb.app
 https://whatwg.org/
 https://tiny-helpers.dev
+https://shields.io/
 
 My Design Hat:
 
