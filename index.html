@@ -44,10 +44,13 @@ Finding your way around
   5.e subsection 5 - polygon
   5.f subsection 6 - path
   5.g subsection 7 - box
-6. Section 4 - Best Practices
-7. Footer
-  7.a About
-  7.b Author
+6. Section 4 - Masking
+ 6.a subsection 1 - intro
+ 6.b subsection 2 - ...
+7. Section 5 - Best Practices
+8. Footer
+  8.a About
+  8.b Author
 ------------------------->
 <body>
   <!--Container box-->
@@ -61,6 +64,7 @@ Finding your way around
       <ul>
         <li><a href="#sect_filters">Filter</a></li>
         <li><a href="#sect_clipping">Clip</a></li>
+        <li><a href="#sect_masking">Mask</a></li>
         <li><a href="#sect_tips">Tips</a></li>
       </ul>
     </nav>
@@ -721,7 +725,34 @@ Finding your way around
           </div>
           <!--end of subsection-->
       </section>
-      <!--Section 4 - Best Practices-->
+      <!--Section 4 - Masking-->
+      <section id="sect_masking">
+        <header>
+          <h2>Masking...</h2>
+        </header>
+        <!--Section 3 - Clipping - Subsection 1 - intro-->
+        <div id="sect_clip_intro" class="subsection_box">
+          <div class="text_box">
+            <p>The property creates a clipping region that sets what part of an element should be shown (parts that are inside the region are shown, while those outside are hidden)</p>
+            <div class="code_box">
+              <code>
+                img {<br>
+                clip-path: function(value);<br>
+                }
+              </code>
+            </div>
+            <!--end of code_box-->
+          </div>
+          <!--end of text_box-->
+        </div>
+        <!--backtotop shortcut-->
+        <div class="backtotop">
+          <a class="toplink" href="#top"><i class="far  fa-arrow-alt-circle-up"></i></a>
+        </div>
+        <!--end ofbacktotop shortcut-->
+        <!--end of subsection-->
+      </section>
+      <!--Section 5 - Best Practices-->
       <section id="sect_tips">
         <header class="sect_header">
           <h2>Tips and Tricks...</h2>
