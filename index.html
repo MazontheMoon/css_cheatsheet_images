@@ -731,17 +731,32 @@ Finding your way around
           <h2>Masking...</h2>
         </header>
         <!--Section 3 - Clipping - Subsection 1 - intro-->
-        <div id="sect_clip_intro" class="subsection_box">
+        <div id="sect_mask_intro" class="subsection_box">
           <div class="text_box">
-            <p>The property creates a clipping region that sets what part of an element should be shown (parts that are inside the region are shown, while those outside are hidden)</p>
+            <p>Where <span class="look-at-me-text">Clips</span> are paths, <span class="look-at-me-text">Masks</span> are images.</p>
+            <p>Masking gives you the option of using an image (or SVG ir gradiant) as a mask layer.</p>
+            <p>When you use clip-path the clipped area becomes invisible. If you want to instead change opacity or apply a different effect then use mask instead.</p>
             <div class="code_box">
               <code>
-                img {<br>
-                clip-path: function(value);<br>
-                }
+                /*masking not fully supported so a suitable time to use <span class="look-at-me-text">@supports </span>*/<br>
+                  @supports(-webkit-mask-image: url(#mask)) or (mask-image: url#mask)) {<br>
+                    .image {<br>
+                      webkit-mask-image: url(#image);<br>
+                      mask-image: url(#image);<br>
+                  }
               </code>
             </div>
             <!--end of code_box-->
+            <figure id="mask_img">
+              <figcaption>Masking with an image...</figcaption>
+              <!--example of mask using an image-->
+              <img src="https://github.com/MazontheMoon/css_cheatsheet_images/blob/main/assets/kitty.jpg?raw=true" alt="..." width="250px">
+            </figure>
+            <figure id="mask_img">
+              <figcaption>Masking with a gradient...</figcaption>
+              <!--example of mask using a gradient-->
+              <img src="https://github.com/MazontheMoon/css_cheatsheet_images/blob/main/assets/kitty.jpg?raw=true" alt="..." width="250px">
+            </figure>
           </div>
           <!--end of text_box-->
         </div>
