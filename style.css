@@ -450,6 +450,21 @@ Clipped Image Examples
   clip-path: view-box;
 }
 
+/*=====================
+Masked Image Examples
+======================*/
+/*svg mask*/
+#mask_img img {
+  object-fit: cover;
+  webkit-mask-image: url(https://commons.wikimedia.org/wiki/File:Five-pointed_star.svg);
+  mask-image: url(https://commons.wikimedia.org/wiki/File:Five-pointed_star.svg);
+}
+
+/*gradient mask*/
+#mask_gradiant img {
+  
+}
+
 /*====
 Footer
 =======*/
