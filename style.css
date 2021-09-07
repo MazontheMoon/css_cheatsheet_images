@@ -453,16 +453,27 @@ Clipped Image Examples
 /*=====================
 Masked Image Examples
 ======================*/
+.mask {
+  margin: 1rem auto;
+  width: 250px;
+  height: 400px;
+  border: solid 0.5rem var(--primary_col);
+  background-image: url(https://github.com/MazontheMoon/css_cheatsheet_images/blob/main/assets/kitty.jpg?raw=true);
+  background-size: cover;
+  background-position: center;
+}
+
 /*svg mask*/
-#mask_img img {
+#mask_img div {
   object-fit: cover;
   webkit-mask-image: url(https://commons.wikimedia.org/wiki/File:Five-pointed_star.svg);
   mask-image: url(https://commons.wikimedia.org/wiki/File:Five-pointed_star.svg);
 }
 
 /*gradient mask*/
-#mask_gradiant img {
-  
+#mask_gradiant div {
+  webkit-mask-image: linear-gradient(to bottom, transparent 10%, black);
+  mask-image: linear-gradient(to bottom, transparent 10%, black);  
 }
 
 /*====
