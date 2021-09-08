@@ -466,13 +466,13 @@ Masked Image Examples
 /*svg mask*/
 #mask_img div {
   object-fit: cover;
-  webkit-mask-image: url(https://commons.wikimedia.org/wiki/File:Five-pointed_star.svg);
+  -webkit-mask-image: url(https://commons.wikimedia.org/wiki/File:Five-pointed_star.svg);
   mask-image: url(https://commons.wikimedia.org/wiki/File:Five-pointed_star.svg);
 }
 
 /*gradient mask*/
 #mask_gradiant div {
-  webkit-mask-image: linear-gradient(to bottom, transparent 10%, black);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 10%, black);
   mask-image: linear-gradient(to bottom, transparent 10%, black);  
 }
 
