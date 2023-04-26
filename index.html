@@ -776,18 +776,18 @@ Finding your way around
           <h2>image()</h2>
         </header>
         <div class="text_box">
-          <p>...similar  to the url() function, but with some additions...</p>
+          <p>...similar  to the url() function, but with some additions... </p>
           <ul>
             <li>specifying the image's directionality</li>
             <li>displaying just a part of that image defined by a media fragment</li>
             <li>specifying a solid color as a fallback/li>
           </ul>
           <p>image() can accept 3 optional values:</p>
-          <ul>
-            <li>tag for image directionality (either ltr or rtl)</li>
-            <li>image source</li>
-            <li>color</li>
-          </ul>
+            <ul>
+              <li>tag for image directionality (either ltr or rtl)</li>
+              <li>image source</li>
+              <li>color</li>
+            </ul>
           <div class="code_box">
             <code>
               .img {<br>
@@ -795,6 +795,18 @@ Finding your way around
               }
             </code>
           </div>
+            <p><u>Directionality</u></p>
+            <p>This feature is useful when using directional images or icons by setting <i>ltr</i> or <i>rtl</i> for left-to-right or right-to-left.</p>
+            <div class="code_box">
+              <code>
+                arrow-list {<br>
+                  list-style-image: image(ltr 'arrow.png');<br>
+                }
+              </code>
+            </div>
+            <p><u>Fragments</u></p>
+            <p><u>Fallback</u></p>
+          
         </div>
         <!--backtotop shortcut-->
         <div class="backtotop">
