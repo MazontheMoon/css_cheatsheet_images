@@ -805,6 +805,23 @@ Finding your way around
               </code>
             </div>
             <p><u>Fragments</u></p>
+            <p>This features allows us to show a portion of the image by supplying an x and y coordinate (the starting point), followed by a width and height(appending the information after the URL with a #xywh= followed by the values we want to use for the starting coordinates, width, and height).</p>
+            <div class="code_box">
+              <code>
+                .hero {<br>
+                  background-image: image("images/my-image.jpg#xywh=150,50,500,300");<br>
+                }
+              </code>
+              <p>When we define the fragment, the default units used are pixels, but we can tell the browser to use percentages instead by including percent: before the coordinates.</p>
+              <div class="code_box">
+                <code>
+                  .percentage-based-fragment {<br>
+                    background-image: image("images/my-image.jpg#xywh=percent:10,10,70,80");<br>
+                  } <br>
+                  //show 70% of the total width and 80% of the total height of the original image, starting 10% across and 10% down
+                  }
+                </code>
+            </div>
             <p><u>Fallback</u></p>
           
         </div>
