@@ -812,6 +812,7 @@ Finding your way around
                   background-image: image("images/my-image.jpg#xywh=150,50,500,300");<br>
                 }
               </code>
+            </div>
               <p>When we define the fragment, the default units used are pixels, but we can tell the browser to use percentages instead by including percent: before the coordinates.</p>
               <div class="code_box">
                 <code>
@@ -819,11 +820,34 @@ Finding your way around
                     background-image: image("images/my-image.jpg#xywh=percent:10,10,70,80");<br>
                   } <br>
                   //show 70% of the total width and 80% of the total height of the original image, starting 10% across and 10% down
-                  }
                 </code>
-            </div>
-            <p><u>Fallback</u></p>
+              </div>
           
+            <p><u>Fallback</u></p>
+            <p>We can specify a fallback colour with the image...</p>
+            <div class="code_box">
+              <code>
+                .with-fallback-color {<br>
+                  background-image: image("images/my-image.jpg#xywh=20,30,500,300", #123456);<br>
+                }
+              </code>
+            </div>
+            <p>And.... a trick we can do with the fallback colour is to tint the image (by specifying only the fallback colour in a stack with the image)
+            </p>
+            <div class="code_box">
+              <code>
+                .tinted-bg-image {<br>
+                  background-image: image(hsl(210 47% 20% / .75)), url("images/my-image.jpg");<br>
+                }
+              </code>
+            </div>
+            <div class="code_box">
+              <code>
+                .fake-low-opacity-bg {<br>
+                  background-image: image(hsl(0 0% 100% / .8)), url("images/my-image.jpg");<br>
+                }
+              </code>
+            </div>
         </div>
         <!--backtotop shortcut-->
         <div class="backtotop">
