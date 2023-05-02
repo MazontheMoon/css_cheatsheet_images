@@ -47,10 +47,11 @@ Finding your way around
 6. Section 4 - Masking
  6.a subsection 1 - intro
  6.b subsection 2 - ...
-7. Section 5 - Best Practices
-8. Footer
-  8.a About
-  8.b Author
+7. Section 5 - image()
+8. Section 6 - Best Practices
+9. Footer
+  9.a About
+  9.b Author
 ------------------------->
 <body>
   <!--Container box-->
@@ -65,6 +66,7 @@ Finding your way around
         <li><a href="#sect_filters">Filter</a></li>
         <li><a href="#sect_clipping">Clip</a></li>
         <li><a href="#sect_masking">Mask</a></li>
+        <li><a href="#sect_image">image()</a></li>
         <li><a href="#sect_tips">Tips</a></li>
       </ul>
     </nav>
@@ -768,7 +770,94 @@ Finding your way around
         <!--end ofbacktotop shortcut-->
         <!--end of subsection-->
       </section>
-      <!--Section 5 - Best Practices-->
+      <!--Section 5 - image()-->
+      <section id="sect_image">
+        <header class="sect_header">
+          <h2>image()</h2>
+        </header>
+        <div class="text_box">
+          <p>...similar  to the url() function, but with some additions... </p>
+          <ul>
+            <li>...specifying the image's directionality</li>
+            <li>...displaying just a part of that image defined by a media fragment</li>
+            <li>...specifying a solid color as a fallback/li>
+          </ul>
+          <p>image() can accept 3 optional values:</p>
+            <ul>
+              <li>tag for image directionality (either ltr or rtl)</li>
+              <li>image source</li>
+              <li>color</li>
+            </ul>
+          <div class="code_box">
+            <code>
+              .img {<br>
+                background-image: image("images/my-image.webp");<br>
+              }
+            </code>
+          </div>
+            <p><u>Directionality</u></p>
+            <p>This feature is useful when using directional images or icons by setting <i>ltr</i> or <i>rtl</i> for left-to-right or right-to-left.</p>
+            <div class="code_box">
+              <code>
+                arrow-list {<br>
+                  list-style-image: image(ltr 'arrow.png');<br>
+                }
+              </code>
+            </div>
+            <p><u>Fragments</u></p>
+            <p>This features allows us to show a portion of the image by supplying an x and y coordinate (the starting point), followed by a width and height(appending the information after the URL with a #xywh= followed by the values we want to use for the starting coordinates, width, and height).</p>
+            <div class="code_box">
+              <code>
+                .hero {<br>
+                  background-image: image("images/my-image.jpg#xywh=150,50,500,300");<br>
+                }
+              </code>
+            </div>
+              <p>When we define the fragment, the default units used are pixels, but we can tell the browser to use percentages instead by including percent: before the coordinates.</p>
+              <div class="code_box">
+                <code>
+                  .percentage-based-fragment {<br>
+                    background-image: image("images/my-image.jpg#xywh=percent:10,10,70,80");<br>
+                  } <br>
+                  //show 70% of the total width and 80% of the total height of the original image, starting 10% across and 10% down
+                </code>
+              </div>
+          
+            <p><u>Fallback</u></p>
+            <p>We can specify a fallback colour with the image...</p>
+            <div class="code_box">
+              <code>
+                .with-fallback-color {<br>
+                  background-image: image("images/my-image.jpg#xywh=20,30,500,300", #123456);<br>
+                }
+              </code>
+            </div>
+            <p>And.... a trick we can do with the fallback colour is to tint the image (by specifying only the fallback colour in a stack with the image)
+            </p>
+            <div class="code_box">
+              <code>
+                .tinted-bg-image {<br>
+                  background-image: image(hsl(210 47% 20% / .75)), url("images/my-image.jpg");<br>
+                }
+              </code>
+            </div>
+            <div class="code_box">
+              <code>
+                .fake-low-opacity-bg {<br>
+                  background-image: image(hsl(0 0% 100% / .8)), url("images/my-image.jpg");<br>
+                }
+              </code>
+            </div>
+        </div>
+        <!--backtotop shortcut-->
+        <div class="backtotop">
+          <a class="toplink" href="#top"><i class="far  fa-arrow-alt-circle-up"></i></a>
+        </div>
+        <!--end ofbacktotop shortcut-->
+        <!--end of subsection-->
+      </section>
+
+      <!--Section 6 - Best Practices-->
       <section id="sect_tips">
         <header class="sect_header">
           <h2>Tips and Tricks...</h2>

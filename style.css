@@ -274,7 +274,17 @@ section .subsection_box {
   font-size: clamp(0.8rem, 1.4rem, 1.8rem);
   color: currentColor;
 }
+.text_box ul {
+  margin: 1rem;
+  list-style: none;
+}
 
+.text_box ul li {
+  padding: 0.4rem;
+}
+.text_box p u {
+  font-weight: bold;
+}
 /*figures and captions for image examples*/
 figure {
   display: flex;
