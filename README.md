@@ -53,7 +53,7 @@ Examples:
 
 * Version 1.1 - Initial content
 * Version 1.2 - Styling
-* Version 1.3 - Update - add css image() subsection - IN PROGRESS
+* Version 1.3 - Update - add css image() subsection
 
 ## Acknowledgments
 We would like to offer our appreciation to Spotify and the *This is Celestial Aeon Project* playlist for providing the suitable accompaniment for this project
