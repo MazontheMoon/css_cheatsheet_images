@@ -54,10 +54,7 @@ Examples:
 * Version 1.1 - Initial content
 * Version 1.2 - Styling
 * Version 1.3 - Update - add css image() subsection
-<<<<<<< Updated upstream
-=======
 * Version 1.4 - Update - add tip for aspect ratio
->>>>>>> Stashed changes
 
 ## Acknowledgments
 We would like to offer our appreciation to Spotify and the *This is Celestial Aeon Project* playlist for providing the suitable accompaniment for this project
