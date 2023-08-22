@@ -862,6 +862,7 @@ Finding your way around
         <header class="sect_header">
           <h2>Tips and Tricks...</h2>
         </header>
+        <!--image not found tip-->
         <div class="text_box">
           <p>There can also be a situation where the image doesn't load and while there is always the alt text there is also a more stylish way of handling images with broken links</p>
           <div class="code_box">
@@ -884,9 +885,23 @@ Finding your way around
             </code>
           </div>
           <!--end of code_box-->
-          <p>And don't forget about the <span class="code_word">inherit</span>, <span class="code_word">initial</span> and <span class="code_word">unset</span> values!</p>
         </div>
         <!--end of text_box-->
+        <!--aspect ratio not found tip-->
+        <div class="text_box">
+          <p>A great tip for aspect ratio...</p>
+          <div class="code_box">
+            <code>
+              img {<br>
+              --ar: calc(4/3);<br>
+              --height: 30vmin;<br>
+              --width: calc (var(--height) * var(--ar));<br>
+              height: var(--height);<br>
+              width: var(--width);<br>
+              }
+            </code>
+            </div>
+        </div>
         <div class="text_box">
           <p>This is technically <span class="code-word">html</span> rather than <span class="code-word">css</span> but still a good tip when dealing with <span class="code-word">&lt;img&gt;</span></p>
           <div class="code_box">
